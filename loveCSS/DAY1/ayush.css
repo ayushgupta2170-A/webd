@@ -1,0 +1,16 @@
+/*priorities
+1.inline css
+2.id
+3.class
+4.tag(h1,h2)
+5.ordering important(tie)
+*/
+
+
+h1{
+    font-size:smaller;
+    text-align:center;
+}
+p{
+    background-color: yellow;
+}

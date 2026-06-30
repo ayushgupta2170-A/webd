@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>University Registration Form</h1>
+<p>Please fill out form below to register.</p>
+<hr>
+<h2>Personal Details</h2>
+    <form>
+        <label for="name">First Name:</label>
+        <input type="text"name="first name"id="name" placeholder="e.g: Ayush" required>   <!--required use krenge tb voh bhrna hi rhega-->
+
+        <br><br>
+
+        <label for="surname">Last Name:</label>
+        <input type="text"name="surname"id="surname" placeholder="e.g: Gupta">
+
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date"name="dob"id="dob" >
+
+        <br>
+        <h3>Gender</h3>
+
+        <label for="male">Male</label> 
+        <input type="radio"name="gender" id="male" value="male">
+        <br> 
+
+        <label for="female">FeMale</label>
+        <input type="radio"name="gender" id="female" value="female">
+        <br>
+
+        <label for="Others">Others</label>
+        <input type="radio"name="gender" id="Others" value="Others">
+        <br>
+    
+        <h3>Upload Your Photo </h3>
+        <input type="file"name="file"> <!--label ka bhi use kr skte ho-->
+        <hr>
+
+        <h2>Contact Information</h2>
+
+        <label for="Email">Email Address:</label>
+        <input type="text"name="Email"id="Email" placeholder="you@example.com">
+
+        <br><br>
+
+        <label for="number">Phone no:</label>
+        <input type="number"name="number"id="number" placeholder="e.g: 9450231456">
+
+        <br><br>
+
+        <label for="Address">Mailing Address:</label>
+        <br>
+        <textarea name="address"id="Address" rows="05" coloumn="30" placeholder="Street Address,City,State,ZIP Code"></textarea>
+        <!--textarea ka use isiliye krte hai bcoz naam vagera chota hai,vha itne jada words ki jrurt
+         nhi pdti hai but address vagera bda hota hai,tbhi textarea ka use hota hai-->
+         <hr>
+
+         <h2>Academic Information</h2>
+
+         <label for="Course">Select Your Courses:</label>
+         <select name="course"id="Course">
+            <option value="CSE">CSE</option>
+            <option value="CSE DS">CSE DS</option>
+            <option value="CS IT">CS IT</option>
+            <option value="IT">IT</option><!--value isiliye use kiya jb input 
+            jayega toh on/off nhi hoga jo required hai,vhi jayega-->
+         </select>
+
+         <br><br>
+         <h3>ExtraCurricular Activities</h3>
+         <br>
+
+         <label for="Sports">Sports</label>
+         <input type="checkbox" name="interest" id="Sports" value="Sports">
+         <br>
+
+         <label for="Music">Music&Arts</label>
+         <input type="checkbox" name="interest" id="Music" value="Music">
+         <br>
+
+         <label for="Technology">Technology</label>
+         <input type="checkbox"name="interest" id="Technology" value="Technology">
+         <br>
+
+         <label for="Volunterring">Volunterring</label>
+         <input type="checkbox"name="interest" id="Volunterring" value="Volunterring">
+         <hr>
+
+         <h3>Create Your Account</h3>
+         <br>
+
+        <label for="password">Create a Password :</label>
+        <input type="text"name="password"id="password">
+
+        <br><br>
+
+        <label for="question">Security Questions:</label>
+        <select name="questions"id="question">
+            <option value="ques1"> What is your name ?</option>
+            <option value="ques2"> What is your favourite food?</option>
+            <option value="ques3"> What is your hobby?</option>
+            <option value="ques4"> Who is your best friend?</option>
+        </select>
+
+        <br><br>
+
+        <label for="answer">Security Answer:</label>
+        <input type="answer"name="answer"id="answer">
+
+        <br><br>
+
+        
+            <input type="checkbox"name="terms"required>
+            <label for="terms"> I agree to the Terms and Conditions.</label>
+    
+
+
+        <hr>
+        <br><br>
+
+        <!--2 trike se register aur clear form likh skte hai-->
+        <input type="submit"value="register">   <!--1trika older method-->
+       <!-- <button type="submit">register</button>-->
+        <button type="reset">Clear form</button>   <!--2trika-->
+
+
+    </form>
+    
+</body>
+</html>

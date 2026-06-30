@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Name:</label>
+        <input type="text"name="username">
+
+        <br><br>  <!--line ko alg kiya aur space bhi mila bcoz 2 times use kiya hai-->
+
+        <label>Age:</label>
+        <input type="number"name="userAge">
+
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password"name="userPassword"> <!--hm log name aur user(password/age/username), isiliye likh rhe 
+        ki yeh data store jha store ho rha hai,uske sath user name/password/age save hota hai
+        tbhi likhna pdta hai-->
+        <br><br>
+
+
+
+        <label for="male">Male</label>  
+        <!--for ka use kr rhe hai bcoz kai baar kya hota hai gole 
+        bahut chote hote hai,aur male pr click krte hai tab option fill ho jata hai,isiliye for use krte hai..
+        for likhte hai ,toh id ko bhi mention krte hai kyuki ye btata hai ki mera label aur input linked hai,
+        id hmesha unique hoti hai mtlb same nhi rkh skte hai sbki-->
+
+        <!--Similarly for others USE, For and id-->
+
+        <input type="radio"name="gender" id="male" value="male">  
+        <!--radio ka use hai,tb option krne vala aata hai,aur jb name="gender"type se krte hai,
+        tb ek hi option choose kr skte hai,agr name="gender" na likhte hai,tb saare option choose kr skte hai...
+        -->
+
+        <label for="female">FeMale</label>
+        <input type="radio"name="gender" id="female" value="female">  
+        <!--agr, value="XYZ" nhi likhenge toh link/site mein on/off dikhega like gender mein on/off
+        aarha tha,female/male nhi aa rha tha,jb submit kr rhe thai tb, backened mein gender=on aa rha tha,
+        try kr skte ho value vala part htakr-->
+
+        <label for="Others">Others</label>
+        <input type="radio"name="gender" id="Others" value="Others">
+
+
+        <br><br>
+
+        <!--subject choose krte any3,4 like, checkbox use krte hai for multiple options selecting  -->
+        <label for="C++">C++</label>
+        <input type="Checkbox"name="subject" id="C++" value="C++">
+
+        <label for="Python">Python</label>
+        <input type="Checkbox"name="subject" id="Python" value="Python">
+
+        <label for="Java">Java</label>
+        <input type="Checkbox"name="subject" id="Java" value="Java">
+
+        <label for="javascript">javascript</label>
+        <input type="Checkbox"name="subject" id="javascript" value="javascript">
+        
+        
+        
+        
+
+        <input type="submit">
+
+
+    </form>
+    
+</body>
+</html>
+<!--http://127.0.0.1:5500/DAY.4/index.html?username=Ayush+Gupta+&userAge=20&userPassword=ayush2170--
+ye sb backened ke pass chli jayegimtlb store ho jayegi

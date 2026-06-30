@@ -1,0 +1,66 @@
+                     /*SELECTORS*/
+
+ul{
+    background-color: aquamarine;
+}
+/*tag element selector*/
+/* maanlo hme h1 upr vala hi select krna hai ,toh hm id ka use kr skte hai,id ke liye has  lgate hai*/
+#first{
+    background-color: blanchedalmond;
+}
+#second{
+    background-color: rgba(240, 255, 244, 0.355); 
+    /*240,255,244 KA MTLB RED,GREEN,BLUE KA AMOUNT HAI JINSE milke bna hai*/ 
+    /* forth value alpha hoti hai ,jo transparency btati hai,iski value 0to1 jaati hai*/ 
+}
+/*class base selection*/ /*classs ka use kre dot lgake*/ /*iska use grouping ke liye krenge,
+class aur id ka use max. time krenge,class aur id ek sath bhi use krte hai ek hi line mein*/
+.third{
+    background-color: chartreuse;
+
+}
+.fourth{
+    background-color: darkorange;
+}
+/*group based selection*/
+/*
+h1,.double{
+    background-color: rgb(193, 58, 58);/*in values ko hexadecimal form mein dikha sktte hai
+}
+*/ 
+h1,.double{
+    background-color: rgb(#639747);/*aage ki 2 value red,phir 2 green,2 blue*/
+}
+/*font */
+/*fixel imag ki sbse choti unit hoti hai*//*google pr search krlo,pta chl jayyega*/
+/*jb search kroge unme chhot chhote se box honge unke pixel bolte,pixel exact nhi hai.
+sbke alg alg hote hai*/
+
+/*image ka size=
+pixel mein jo coloumn aur rows hoti hai unka multiply*byte size*/
+
+/* (7*9)*3 byte=189bytes */
+/* in our phone 1920x1080pixel hota hai mtlb 1920 rows,1080colomns*3bytes=6mb;*/
+/*pixel ko inch aur cm mein calculate nhi kr skte,mobile aur laptop mein 
+vhi  same image alg alg pixel mein hoti hai*//*jo google mein diya hai voh uss time ki screen ka hai*//**/
+h2{
+font-size: 3vw;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 4000;
+font-style: italic;
+/*agr koi font google se link krana hai toh phle link krana pdega,
+agr koi chahiye,toh google code pr jao vha embedded code copy kro ,
+aur paste kro*/
+}
+/*html{
+    font: size 100px;
+}*/
+li{
+    /*font-size: 3vh;*/
+    /*percentage unit*/
+    font-size: 90%;
+}
+
+
+
+
