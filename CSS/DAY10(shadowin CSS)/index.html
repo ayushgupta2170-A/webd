@@ -1,0 +1,65 @@
+<!DOCTYPE html><!--mdn web docs-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --1-color:red;
+            --1-width:440px;
+        }
+        .container{
+            background-color:antiquewhite;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        img{
+            width:170px;
+            height: 150px;
+        }
+        .box{
+            background-color: aquamarine;
+            width:var(--1-width);
+            height: 430px;
+            border: 5px solid var(--1-color);
+            margin: 10px;
+            padding: 5px;
+            /*box-shadow: -10px -15px burlywood;  /*  starting mein  - use krne se shadow changes*/
+           /* box-shadow: -5px -10px 5000px yellowgreen; /*blur shadow ke liye 3rd term*/
+            /*box-shadow: 10px 5px 15px 20px orange ;/*4 term for shadow spread*/
+           /*box-shadow:   inset 10px 15px burlywood;/*inset lgane se andar side sadow aa jati hai*/
+           box-shadow: 10px 15px orange,18px 22px green/*multiple sahdow*/
+        }
+        #head1{
+            /*text-shadow: 2px 3px 2px white;*/
+            /*text-shadow: rgb(255, 47, 182) 13px 14px 3px;*/
+            /*text-shadow: white 12px 10px;*/
+             /*text-shadow: white 6px 7px;*/
+             text-shadow: white 4px 5px,red 5px 6px,yellow 7px 8px;/*multiple sahdowtext*/ 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="one world.webp"/>
+            <h2 id="head1">Welcome to the world of Coding</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Incidunt placeat dicta delectus cumque vitae magnam quis libero atque quo fugit sunt
+                voluptatum voluptates optio iure natus ipsa sed quos excepturi obcaecati, itaque,
+                debitis provident id! Molestiae ratione reprehenderit illum quis, praesentium obcaecati
+                laudantium, dignissimos, corrupti eius distinctio fuga et tenetur.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

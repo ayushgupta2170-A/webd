@@ -1,0 +1,44 @@
+<!DOCTYPE html><!--mdn web docs-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: antiquewhite;
+            border: 3px solid black;
+
+         /*   transition-property: all;/*width bhi likh skte hai but smooth moveX*/
+           /* transition-duration: 4s;
+            transition-delay: 1s;
+            transition-timing-function: linear;*/
+
+            /*shorthand notataion*/
+            /*transition: all 2s;*/
+            /*transition: all 2s ease-in;*/
+            /*transition:all 2s ease-in 5s ;*/
+            transition: width 3s,height 4s;
+            
+
+        }
+       /* .box{
+            width: 500px;
+            background-color: aqua;
+        }*/
+        .box:hover{
+            width: 1000px;
+            height: 700px;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+    </div>
+
+</body>
+</html>

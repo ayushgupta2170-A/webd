@@ -1,0 +1,89 @@
+<!DOCTYPE html><!--mdn web docs-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transform</title>
+
+    <style>
+         *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background-color: rgb(178,178,220);
+            height: 100%;
+            width: 100%;
+        }
+
+        .container{
+            background-color: antiquewhite;
+            padding: 5rem;
+            gap:1rem;
+            display:grid;/*
+            min-height:100vh;
+            padding:2rem;
+            gap:1rem;*/
+
+            grid-template-columns: repeat(3,1fr);
+
+          /*  grid-template-areas:
+            "header header header"
+            "sidebaar content1 content1"
+            "sidebaar content2 content3"
+            "footer footer footer";*/
+        }
+
+        .item{
+            border:2px solid black;
+            background-color:cornflowerblue;
+            color:white;
+            padding:2rem;
+            
+            height: 150px;
+            width: 150px;
+        }
+        #h1:hover{
+            transform:rotateX(45deg);
+        }
+        #h2:hover{
+            transform: rotateY(60deg);
+        }
+        #h3:hover{
+            transform: translateX(150px);
+        }
+        #h4:hover{
+            transform: translateY(-100px);
+        }
+        #h5:hover{
+            transform: perspective(300px) translateZ(100px);
+        }
+        #h6:hover{
+            transform: scaleX(1.5);
+        }
+         #h7:hover{
+            transform: perspective(150px) scale(5) rotateY(60deg) ;
+        }
+        #h8:hover{
+            transform: skewX(120deg)
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="item"id="h1">h1</div>
+         <div class="item"id="h2">h2</div>
+         <div class="item"id="h3">h3</div>
+         <div class="item"id="h4">h4</div>
+         <div class="item"id="h5">h5</div>
+         <div class="item"id="h6">h6</div>
+         <div class="item"id="h7">h7</div>
+         <div class="item"id="h8">h8</div>
+         
+    </div>     
+    
+</body>
+</html>

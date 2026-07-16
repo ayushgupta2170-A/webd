@@ -1,0 +1,77 @@
+<!--css position properyt-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 3px solid black;
+        }
+
+        img{
+            margin:10px ;
+        }
+
+        .image2{
+            position:relative ;
+            top:10px;
+            left: 150px;
+
+        }
+
+        .container{
+            position: relative;
+            height: 8000px;
+            background-color: beige;
+        }
+
+        .image3{
+            position:fixed;
+        }
+
+        .image2{
+            position: sticky;
+            top:100px ;
+        }
+
+        .box{
+            background-color: burlywood;
+            height:5000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img
+          src="s1.jpg"
+          alt="poster1"
+          width="300px"
+          height="300px"
+          class="image1"
+
+        />
+
+         <img
+          src="s2.jpg"
+          alt="poster2"
+          width="300px"
+          height="300px"
+          class="image2"
+
+        />
+
+         <img
+          src="s3.jpg"
+          alt="poster3"
+          width="300px"
+          height="300px"
+          class="image3"
+
+        />
+
+    </div>
+
+</body>
+</html>

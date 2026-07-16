@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #0f172a;
+    --second-bg-color: #1e293b;
+    --text-color: #f8fafc;
+    --main-color: #0ea5e9;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 35px;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--main-color);
+}
+
+/* Sections General */
+section {
+    
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Hero Section */
+.hero {
+    flex-direction: row;
+    justify-content: center; /* Dono ko center mein layega */
+    align-items: center;
+    flex-wrap: wrap; /* Agar screen chhoti hogi toh layout automatically adjust hoga */
+    gap: 40px; /* Text aur photo ke beech ki spacing */
+    padding-top: 130px; /* Navbar se thoda neeche shift karne ke liye */
+}
+
+.hero-content {
+    flex: 1 1 400px; /* Screen ke hisaab se text box ka size adjust hoga */
+    max-width: 600px;
+}
+
+.hero-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    color: var(--main-color);
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+.hero-image {
+    flex: 1 1 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    text-decoration: none;
+    margin-right: 15px;
+    transition: .5s ease;
+}
+
+.social-icons a:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--main-color);
+    border-radius: 40px;
+    box-shadow: 0 0 10px var(--main-color);
+    font-size: 16px;
+    color: var(--bg-color);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+/* Hero Image & Floating Animation */
+.hero-image .img-box {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px var(--main-color);
+    animation: float 4s ease-in-out infinite;
+}
+
+.hero-image .img-box img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--bg-color);
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+/* Typing Effect cursor */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: var(--main-color);
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* About & Skills */
+.about, .skills {
+    background: var(--second-bg-color);
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.section-title span {
+    color: var(--main-color);
+}
+
+.about-content p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.8;
+}
+
+.skills-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background: var(--bg-color);
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    transition: 0.5s;
+    border: 1px solid transparent;
+}
+
+.skill-card i {
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border: 1px solid var(--main-color);
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.5);
+}
+
+/* Scroll Animation Classes */
+.hidden {
+    opacity: 1;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Projects Section */
+.projects {
+    background: var(--bg-color);
+}
+
+.projects-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: var(--second-bg-color);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 350px;
+    transition: 0.5s ease;
+    border: 1px solid transparent;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border: 1px solid var(--main-color);
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.5);
+}
+
+.project-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--main-color);
+}
+
+.project-info p {
+    font-size: 15px;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.btn-small {
+    display: inline-block;
+    padding: 8px 20px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-small:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+/* Contact Section */
+.contact {
+    background: var(--second-bg-color);
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 10px auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-form .input-box input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid transparent;
+    resize: none;
+    transition: 0.3s;
+}
+
+.contact-form .input-box input {
+    width: 49%;
+}
+
+.contact-form .input-box input:focus,
+.contact-form textarea:focus {
+    border: 1px solid var(--main-color);
+    outline: none;
+    box-shadow: 0 0 10px rgba(14, 165, 233, 0.2);
+}
+/* Responsive Design (For Centering Image and Text) */
+@media (max-width: 991px) {
+    .hero {
+        flex-direction: column-reverse; /* Text niche, image upar */
+        text-align: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Text aur buttons center mein */
+    }
+
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image .img-box {
+        margin: 0 auto; /* Image box properly center ho jayega */
+        width: 300px;
+        height: 300px;
+    }
+
+    .nav-links {
+        display: none; /* Mobile view ke liye filhal menu hide kiya hai */
+    }
+}

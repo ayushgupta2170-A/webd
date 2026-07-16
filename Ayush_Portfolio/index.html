@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Gupta | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">AyushGupta<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content hidden">
+            <h3>Hello, It's Me</h3>
+            <h1>Ayush Gupta</h1>
+            <h3>And I'm a <span class="typing-text"></span><span class="cursor">&nbsp;</span></h3>
+            <p>I'm a B.Tech Computer Science student passionate about solving complex problems through DSA and building amazing web experiences.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ayush-gupta-59b960363?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/ayushgupta2170-A"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/AyushGu9362344"><i class="fab fa-twitter"></i></a>
+            </div>
+            <a href="#contact" class="btn">Let's Talk</a>
+        </div>
+        <div class="hero-image hidden">
+            <div class="img-box">
+                <img src="ayushh.jpeg" alt=" AyushGupta">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-title hidden">
+            <h2>About <span>Me</span></h2>
+        </div>
+        <div class="about-content hidden">
+            <p>I am currently pursuing my B.Tech in Computer Science. My journey in tech is driven by a deep curiosity for how things work under the hood. I spend my time mastering Data Structures and Algorithms to write efficient code, while also bringing creative ideas to life through modern Web Development.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="section-title hidden">
+            <h2>My <span>Skills</span></h2>
+        </div>
+        <div class="skills-grid hidden">
+            <div class="skill-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>DSA</h3>
+                <p>Problem-solving, Optimization, Logic Building</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>Frontend</h3>
+                <p>HTML5, CSS3, JavaScript, React</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-server"></i>
+                <h3>Backend</h3>
+                <p>Node.js, Databases, APIs</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-title hidden">
+            <h2>My <span>Projects</span></h2>
+        </div>
+        <div class="projects-grid hidden">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Mumbai Travel Vlog Hub</h3>
+                    <p>A responsive web platform built with HTML, CSS, and JS to host and showcase cinematic travel vlogs, featuring interactive guides for iconic landmarks like Marine Drive and the Gateway of India.</p>
+                    <a href="#" class="btn-small">View Project</a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>DSA Algorithm Visualizer</h3>
+                    <p>An interactive tool designed to help students understand complex Data Structures and Algorithms through step-by-step visual animations and logic breakdowns.</p>
+                    <a href="#" class="btn-small">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title hidden">
+            <h2>Contact <span>Me</span></h2>
+        </div>
+        <form action="#" class="contact-form hidden">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" required>
+                <input type="text" placeholder="Email Subject" required>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>

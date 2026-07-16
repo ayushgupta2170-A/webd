@@ -1,0 +1,63 @@
+<!DOCTYPE html><!--mdn web docs-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px solid black;
+            background-color:burlywood;
+            display: flex;
+            flex-direction: row;
+            width: 400px;
+            margin: 2px;
+            padding:10px;
+        }
+        #boxleft{
+            border: 2px solid rgb(127, 255, 131);
+            background-color:rgb(0, 255, 200);
+            width: 47%;
+            margin: 2px;
+            padding:2px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #boxRight{
+            border: 5px solid gold;
+            background-color:cornflowerblue;
+             width: 50%; 
+             margin: 2px;
+            padding:2px; 
+        }
+        p{
+            border: 2px solid blue;
+        }
+        img{
+            width: 200px;
+        }
+         @media (max-width:640px) {
+            .container{
+                flex-direction: column;
+            }
+         }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div id="boxleft">
+            <p>text1></p>
+            <p>text2</p>
+        </div>
+        <div id="boxRight">
+            <img src="maharana.jpg"/>
+
+        </div>
+    </div>
+   
+
+</body>
+</html>
