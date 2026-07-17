@@ -335,21 +335,21 @@ a {
 }
 
 #project1 {
-    background-image: url('./Project1.png'); 
+    background-image: url('.//images/Project1.png'); 
 }
 
 #project2 {
-    background-image: url('./1.png'); 
+    background-image: url('.//images/2.png'); 
     margin-right: 100px;
 }
 
 
 #project3{
-    background-image: url('./2.png'); 
+    background-image: url('.//images/1.png'); 
 }
 
 #project4{
-    background-image: url('./1.png'); 
+    background-image: url('.//images/Project1.png'); 
     margin-right: 100px;
 }
 
