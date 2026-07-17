@@ -503,3 +503,60 @@ a {
 .project-card:hover .project-content {
     transform: scale(1.1); /* Project hover pe poora content thoda bada (zoom) ho jayega */
 }
+
+.skill-container{
+    position: relative;
+    display :flex;
+    padding : 5rem;
+    margin :10rem auto;
+    gap :30px;
+
+}
+
+.skill-container-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-container-right{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    position: relative;
+    gap: 2rem;
+}
+
+.skill-faded-text{
+    position: relative;
+    font-size: 15em;
+    font-style: bold;
+    color: rgb(231,231,231);
+    bottom: -35.5%;
+    right: 25%;
+    user-select: none;
+}
+
+.blob-style{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%);
+    animation: blobAnimate 3s linear infinite;
+}
+
+@keyframes blobAnimate{
+    50%{
+        top:54%;
+        left:46%;
+    }
+}
+
+.skills-logo{
+    width: 90px;
+    transition: all 0.5s;
+}
+
+.skills-logo:hover{
+    transform:scale(1.2);
+}
