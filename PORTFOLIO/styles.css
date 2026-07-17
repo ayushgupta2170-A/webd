@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(250, 251, 252);
+}
+
+:root {
+    --bg0orange: #e31313;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.logo-text {
+    font-size: 28px;
+    margin-left: -0.9rem;
+}
+
+.logo {
+    width: 40px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: baseline;
+}
+
+.nav-items {
+    display: flex;
+    cursor: pointer;
+    gap: 2rem;
+    padding: 0; /* '0 rem' ki galti theek ki gayi */
+}
+
+.nav-items div {
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.933);
+}
+
+.nav-items div:hover {
+    transition: 0.8s;
+    font-weight: bold;
+}
+
+.hero-section {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+}  
+
+.faded-text {
+    user-select: none;
+    font-size: 5rem;
+    color: rgb(241, 216, 216);
+    position: absolute; 
+    bottom: -10%; 
+    left: 2%; 
+    font-weight: bold;
+    transition: all 3s;
+    z-index: -1;
+    animation: fadeIn 2s ease-in-out;
+}  
+
+.hero-section-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 50%;
+}   
+
+.hero-section-heading {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.hero-section-subheading {
+    font-size: 25px; /* Ye add kiya: Text ko bada karne ke liye */
+}
+
+.role {
+    color: var(--bg0orange);
+    font-weight: 800;
+}
+
+.hero-section-right {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.hero-section-description {
+    margin-top: 1rem;
+    width: 80%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.btn-pink {
+    background-color: var(--bg0orange);
+    color: rgb(239, 240, 245);
+    padding: 0.8rem 2.3rem;
+    box-shadow: 5px 5px 7px 0px #4d4c4c3f;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    font-size: 18px;
+    cursor: pointer;
+    border: solid 3px transparent;
+    position: relative;
+    z-index: 1;
+
+}
+
+.btn-pink::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    border-radius: 5px;
+    background-color: white;
+    border: solid 3px white;
+    z-index: -1;
+    transition: all 0.8s ease;
+    transform-origin: left;
+}
+
+.btn-pink:hover::before {
+    transform: scaleX(1);
+}
+
+.btn-pink:active {
+    border: solid 3px white;
+    outline: 2px solid white; /* Click par ek extra outline glow ke liye */
+    outline-offset: 2px; /* Outline ko button se thoda door rakhega */
+    transform: scale(0.95); /* Click karne par button thoda sa dabega (3D press effect) */
+}
+
+.btn-pink:hover {
+    color: black;
+    border: solid 3px white;
+}
+
+.btn-bottom {
+    display: none;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.icons img {
+    width: 70px; 
+    height: auto;
+}
+
+.icon-dot {
+    top: 15%;
+    left: 8%;
+    z-index: 1;
+    animation-name: dotAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes dotAnimation {
+    0% { transform: rotateX(70deg); }
+    50% { transform: rotateX(120deg); }
+    100% { transform: rotateX(170deg); }
+}
+
+.icon-dot2 {
+    bottom: -20%;
+    right: 1%;
+    z-index: 8;
+    animation-name: dot2Animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes dot2Animation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.icon-dot3 {
+    top: 15%;
+    right: -2%;
+    bottom: 80%;
+    animation-name: dot3Animation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes dot3Animation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-20px); }
+    100% { transform: translateX(0); }
+}
+
+.icon-dot4 {
+    bottom: -20%;
+    left: 5%;
+    animation-name: dot4Animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes dot4Animation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.icon-dot5 {
+    top: 50%;
+    right: -3%;
+    animation-name: dot5Animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes dot5Animation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.icon-dot6 {
+    bottom: 10%;
+    left: 6%;
+    animation-name: dot6Animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes dot6Animation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.user-image {
+    padding: 2.5rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: scaleImage 5s linear infinite;
+}
+
+.profile-pic {
+    width: 350px; 
+    height: 450px; 
+    object-fit: cover; 
+    border: 5px solid gray;
+}
+
+.user-image img {
+    z-index: -9;
+}
+
+@keyframes scaleImage {
+    0% {
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+    50% {
+        transform: scale(1);
+        filter: grayscale(0);
+        box-shadow: 3px 3px 10px 0px #e5e0e03f;
+    }
+    100% {
+        transform: scale(0.9);
+        filter: grayscale(0);
+    }
+}
+
+.project-section {
+    background-color: rgb(194, 194, 197);
+    margin-top: 4rem;
+}
+
+.page-header {
+    color: var(--bg0orange);
+    font-size: 90px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* ======================================================== */
+/* 🛠️ YAHAN SE HOVER AUR VISIBILITY KI PROBLEM THEEK KI HAI 🛠️ */
+/* ======================================================== */
+
+.project-card {
+    width: 80%;
+    height: 500px;
+    
+    background-size: cover;
+    position: relative;
+    box-shadow: 0px 0px 40px #1f1f1f;
+    margin: 0 auto 3rem auto; /* Extra spacing taaki projects aapas mein na chipkein */
+    z-index: 1; /* Main card ka base index */
+    overflow: hidden; /* Overlay bahar na jaye uske liye */
+}
+
+#project1 {
+    background-image: url('./Project1.png'); 
+}
+
+#project2 {
+    background-image: url('./1.png'); 
+    margin-right: 100px;
+}
+
+
+#project3{
+    background-image: url('./2.png'); 
+}
+
+#project4{
+    background-image: url('./1.png'); 
+    margin-right: 100px;
+}
+
+
+.project-card::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    /* rgb ko rgba banaya taaki background image .png saaf dikhe, varna solid grey hide kar dega */
+    background-color: rgba(0, 0, 0, 0); 
+    z-index: 1; /* Background image ke theek upar */
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index: 2; /* ::after ke upar gradient ayega hover karne par */
+}
+
+.project-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Ye naya code hai: Project ke andar ka text, buttons aur skills ab hide nahi honge */
+.project-content, .project-number {
+    position: relative;
+    z-index: 10; /* Ye overlays ke sabse upar rahega */
+    padding: 2rem; /* Thoda space dene ke liye (aap isko apne hisaab se adjust kar sakte hain) */
+    color: white; /* Text ko readable banane ke liye */
+}
+
+/* Skills icons chote karne ke liye aur flex lagane ke liye taaki line mein aayen */
+.project-skill-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-skill-container img {
+    width: 30px; /* Icons size aap manage kar sakte ho */
+    height: 30px;
+}
+
+.project-heading {
+    margin: 1rem 0;
+}
+
+.btn-grp {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.icon {
+    font-size: 2rem;
+    color: rgb(195, 191, 191);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.icon:hover {
+    color: var(--bg0orange);
+}
+
+.project-number{
+    position: absolute;
+    font-size: 200px;
+    font-weight: 600;
+    color: rgb(255, 246, 246);
+    z-index: 10;
+    /*display: none;*/
+    opacity: 0;
+}
+
+.project-card:hover .project-number{
+    opacity:1;
+}
+
+.project-number-right{
+    right: -40px;
+    top: -45px;
+
+}
+
+.project-number-left{
+    left: -40px;
+    top: -45px;
+}
+
+.project-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2em;
+    gap:1em;
+    transition: all 0.4s;
+    z-index: 5;
+    bottom: 10%;
+     
+
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column; /* Projects ko ek ke niche ek rakhne ke liye */
+    gap: 45px; /* Ye Project 1, 2, 3, 4 ke beech gap dega (aap isko 150px ya apne hisaab se kam/zyada kar sakte hain) */
+    margin-top: 50px; /* Heading "Project" aur pehle project ke beech gap ke liye */
+    align-items: center; /* Saare projects ko center mein rakhne ke liye */
+}
+
+.project-content-left{
+    left: 10%;
+
+}
+
+.project-content-right{
+    left: 40%;
+
+}
+
+.project-heading{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.project-subHeading{
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.btn-grp{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+
+.btn-project:hover{
+    border: none;
+}
+
+.icon{
+    cursor: pointer;
+    color:white;
+    transition: all 0.4s;
+}
+
+.icon:hover{
+    color:var(--bg0orange) ;
+}
+
+.project-card:hover .project-content{
+    transform:scale(1.1);
+}
+
