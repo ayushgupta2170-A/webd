@@ -1,4 +1,9 @@
 /* Website ki har ek cheez pe ye rule lagega (sabka baap selector) */
+:root{
+    --bg-red:#34c4c;
+    --text-blue:#4a557b;
+    --footer-bg:#435391;
+}
 * {
     margin: 0; /* Bahar ki default khali jagah zero kardi */
     padding: 0; /* Andar ki khali jagah zero kardi */
@@ -529,11 +534,11 @@ a {
 
 .skill-faded-text{
     position: relative;
-    font-size: 15em;
+    font-size: 10em;
     font-style: bold;
     color: rgb(231,231,231);
-    bottom: -35.5%;
-    right: 25%;
+    bottom: 45.5%;
+    right: 5%;
     user-select: none;
 }
 
@@ -559,4 +564,209 @@ a {
 
 .skills-logo:hover{
     transform:scale(1.2);
+}
+
+/* ==================== SKILLS SECTION ==================== */
+.skill-container {
+    position: relative;
+    display: flex;
+    padding: 5rem 0;
+    margin: 8rem auto 5rem auto; 
+    gap: 4rem; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    color: #e31313;
+    font-size: 1.5rem;
+}
+
+.skill-faded-text {
+    position: absolute;
+    font-size: 15em; 
+    font-weight: bold;
+    color: rgb(225, 225, 225);
+    bottom: -15%; 
+    right: 5%; /* Shifted to right side as per image */
+    user-select: none;
+    z-index: -1;
+}
+
+.skill-container-left {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-heading {
+    font-size: 3rem; 
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #dd2626;
+}
+
+.big-m {
+    font-size: 5rem;
+    color: var(--bg-red);
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.txt-red{
+    color: var(--bg-red);
+}
+
+.skill-subHeading {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555; 
+}
+
+.skill-container-right {
+    display: grid;
+    flex-wrap: wrap; 
+    width: 45%; 
+    gap: 2.5rem; 
+    justify-content: center; 
+    z-index: 1;
+    margin-top: 2rem;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.skills-logo {
+    width: 60px; 
+    transition: all 0.3s;
+}
+
+.skills-logo:hover {
+    transform: scale(1.1); 
+}
+
+/* ==================== CONTACT SECTION ==================== */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.contact-heading {
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--bg0orange); 
+    margin-bottom: 0.5rem;
+}
+
+.contact-subheading {
+    font-size: 1.5rem;
+    color: #444; 
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+    max-width: 800px;
+    gap: 1.2rem;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #dcdcdc; 
+    outline: none;
+}
+
+.form-input::placeholder, .form-textarea::placeholder {
+    color: #666;
+}
+
+.form-textarea {
+    resize: none; 
+    height: 200px; 
+}
+
+.btn-submit {
+    background-color: var(--bg-red);
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    transform: scale(0.95);
+    background-color: #c93b3b;
+}
+
+/* ==================== FOOTER SECTION ==================== */
+.footer {
+    background-color: var(--footer-bg);
+    padding: 3rem 0;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.4); /* Faded look as per image */
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--bg-red);
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icon-social {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon-social:hover {
+    color: var(--bg-red);
 }
