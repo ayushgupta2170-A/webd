@@ -572,8 +572,8 @@ a {
     display: flex;
     padding: 5rem 0;
     margin: 8rem auto 5rem auto; 
-    gap: 4rem; 
-    justify-content: space-between; 
+    gap: 1rem; 
+    justify-content: center; 
     align-items: flex-start;
     color: #e31313;
     font-size: 1.5rem;
@@ -581,17 +581,18 @@ a {
 
 .skill-faded-text {
     position: absolute;
-    font-size: 15em; 
+    font-size: 10em; 
     font-weight: bold;
     color: rgb(225, 225, 225);
-    bottom: -15%; 
-    right: 5%; /* Shifted to right side as per image */
+    bottom: -15.5%; 
+    right: -15%; /* Shifted to right side as per image */
     user-select: none;
     z-index: -1;
+    transform: rotate(0deg);
 }
 
 .skill-container-left {
-    width: 50%; 
+    width: 60%; 
     display: flex;
     flex-direction: column;
 }
@@ -605,12 +606,13 @@ a {
 }
 
 .big-m {
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--bg-red);
     font-weight: bold;
     display: inline-block;
     vertical-align: middle;
     line-height: 1;
+    margin-right: -15px;
 }
 
 .txt-red{
@@ -629,17 +631,20 @@ a {
 .skill-container-right {
     display: grid;
     flex-wrap: wrap; 
-    width: 45%; 
-    gap: 2.5rem; 
+    width: 35%; 
+    gap: 1.5rem; 
     justify-content: center; 
     z-index: 1;
     margin-top: 2rem;
     grid-template-columns: repeat(4,1fr);
+    align-items: center;
 }
 
 .skills-logo {
-    width: 60px; 
+    width: 50px; 
     transition: all 0.3s;
+    object-fit: contain;
+    height: 50px;
 }
 
 .skills-logo:hover {
