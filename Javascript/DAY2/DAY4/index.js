@@ -92,3 +92,9 @@ let b=12;
 a++;
 console.log(a);
 console.log(b);
+
+let d={value:45};
+let f=a;
+d.value++;
+console.log(a);
+console.log(b);
