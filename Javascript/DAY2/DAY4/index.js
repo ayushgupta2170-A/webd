@@ -109,4 +109,5 @@ function inc(p){
 inc(p);
 console.log(p);//let p=10; ye value leta hai vaise aana toh 11 chahiye
 
+
 //refernce case->same ya different naam se address kr rhe hote hai
