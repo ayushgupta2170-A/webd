@@ -132,6 +132,6 @@ let rectu={
 }*/
 
 //for-of loop
-for(let key of Object.keys(recta)){
+for(let key of Object.keys(rectu)){
     console.log(key);
 }
