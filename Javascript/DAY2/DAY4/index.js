@@ -100,9 +100,10 @@ d.value++;
 console.log(d.value);
 console.log(f.value);
 
+
 let p=10;
 function inc(p){
     p++;
 }
 inc(p);
-console.log(p);
+console.log(p);//let p=10; ye value leta hai vaise aana toh 11 chahiye
