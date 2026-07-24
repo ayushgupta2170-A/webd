@@ -94,7 +94,7 @@ console.log(a);
 console.log(b);
 
 let d={value:45};
-let f=a;
+let f=d;
 d.value++;
 console.log(d);
 console.log(f);
