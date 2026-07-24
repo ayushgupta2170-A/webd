@@ -55,13 +55,13 @@ console.log(rectangleObject);
 delete rectangleObject.color;
 console.log(rectangleObject);
 
-let Rectangle=new Function('length','bred')
-    this.length=leng;
-    this.breadth=bred;
-    this.draw=function(){
+let Rectangle = new Function('leng', 'bred', `
+    this.length = leng;
+    this.breadth = bred;
+    this.draw = function() {
         console.log('drawing');
-    }
-
+    };
+`);
 
     //object creation using rectangle
     let rect=new Rectangle1(2);
