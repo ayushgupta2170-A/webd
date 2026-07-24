@@ -55,7 +55,7 @@ console.log(rectangleObject);
 delete rectangleObject.color;
 console.log(rectangleObject);
 
-let Rectangle = new Function('leng', 'bred', `
+let myRectangle = new Function('leng', 'bred', `
     this.length = leng;
     this.breadth = bred;
     this.draw = function() {
@@ -64,7 +64,7 @@ let Rectangle = new Function('leng', 'bred', `
 `);
 
     //object creation using rectangle
-    let rect=new Rectangle(2,6);
+    let rect=new myRectangle(2,6);
     console.log(rect);
     rect.draw();
 
@@ -88,7 +88,7 @@ let Rectangle = new Function('leng', 'bred', `
 }; */ 
 
 let a=10;
-let b=11;
+let b=12;
 a++;
 console.log(a);
 console.log(b);
