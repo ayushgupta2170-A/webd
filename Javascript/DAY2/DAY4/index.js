@@ -122,9 +122,16 @@ let rectu={
     length:4,
     breadth:8
 };
+
+
 //for-in loop
-for(let key in rectu){
+/*for(let key in rectu){
     //keys are reflected through keyvariable
     //values are reflected through rectu[key]
     console.log(key,rectu[key]);
+}*/
+
+//for-of loop
+for(let key of Object.keys(recta)){
+    console.log(key);
 }
