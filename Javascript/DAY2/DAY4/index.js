@@ -93,8 +93,16 @@ a++;
 console.log(a);
 console.log(b);
 
-let d={value:45};
+
+let d={ value:45};
 let f=d;
 d.value++;
-console.log(d);
-console.log(f);
+console.log(d.value);
+console.log(f.value);
+
+let p=10;
+function inc(p){
+    p++;
+}
+inc(p);
+console.log(p);
