@@ -96,5 +96,5 @@ console.log(b);
 let d={value:45};
 let f=a;
 d.value++;
-console.log(a);
-console.log(b);
+console.log(d);
+console.log(f);
