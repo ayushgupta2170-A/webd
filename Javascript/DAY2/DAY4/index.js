@@ -136,9 +136,47 @@ let rectu={
     console.log(key);////jb entriesuse kro tb length 4,bredth 8 print hota hai
 }*/
 
-if('length' in rectu){
+
+/*if('length' in rectu){
     console.log('present');
 }
 else{
     console.log('absent');
-}
+}*/
+
+
+    //object cloning#1
+/*    
+let src={
+    a:12,
+    b:60,
+    c:30,
+};
+let dest={};
+    for(let key in src){
+        dest[key]=src[key];
+    }
+    console.log(dest);
+    src.a++;
+    console.log(dest);
+*/
+
+//object2
+/*
+let src={
+    a:79,
+    b:45,
+    c:10,
+};
+let src1={value:25};
+let dest=Object.assign({},src,src1);
+
+console.log(dest);
+src.a++;
+console.log(dest);
+*/
+
+
+//object cloning3
+
+
