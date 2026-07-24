@@ -132,6 +132,6 @@ let rectu={
 }*/
 
 //for-of loop
-for(let key of Object.keys(rectu)){
+for(let key of Object.keys(rectu)){//jb key use kro tb length,bredth print hota hai
     console.log(key);
 }
