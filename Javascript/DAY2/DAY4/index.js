@@ -85,3 +85,9 @@ let Rectangle = new Function('leng', 'bred', `
 
        }
 }; */ 
+
+let a=10;
+let b=11;
+a++;
+console.log(a);
+console.log(b);
