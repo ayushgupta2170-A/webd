@@ -37,16 +37,16 @@ let rectangle3=createRectangle(5,8);
 //camelcase->numberOfStudents
 //constructor fx->pascalNotation->first letter of every word is Capital->NoOf students
 //constructor fx->prop/methods->initialise/define
-function Rectangle(){//likh small r bhi likh skte hai..for good capital R
-    this.length=1;
-    this.breadth=2;
+function Rectangle(leng,bred){//likh small r bhi likh skte hai..for good capital R
+    this.length=leng;
+    this.breadth=bred;
     this.draw=function(){
         console.log('drawing');
     }
 
 } 
 //object using construction fx
-let rectangleObject=new Rectangle();
+let rectangleObject=new Rectangle(4,6);
 //let rectangleObj1=createRectangle(5,4);ye vala bhi trika use kr skte hai
 
 rectangleObject.color='yellow';
@@ -54,6 +54,18 @@ console.log(rectangleObject);
 
 delete rectangleObject.color;
 console.log(rectangleObject);
+
+let Rectangle=new Function('length','bred')
+    this.length=leng;
+    this.breadth=bred;
+    this.draw=function(){
+        console.log('drawing');
+    }
+
+
+    //object creation using rectangle
+    let rect=new Rectangle1(2);
+    console.log(rect);
 
 
 
