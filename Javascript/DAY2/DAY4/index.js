@@ -124,5 +124,7 @@ let rectu={
 };
 //for-in loop
 for(let key in rectu){
+    //keys are reflected through keyvariable
+    //values are reflected through rectu[key]
     console.log(key,rectu[key]);
 }
