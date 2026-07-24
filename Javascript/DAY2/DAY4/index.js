@@ -117,3 +117,12 @@ function inc(r){
 }
 inc(r);
 console.log(r.value);
+
+let rectu={
+    length:4,
+    breadth:8
+};
+//for-in loop
+for(let key in rectu){
+    console.log(key,rectu[key]);
+}
