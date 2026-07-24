@@ -178,5 +178,16 @@ console.log(dest);
 
 
 //object cloning3
+let src={
+    a:79,
+    b:45,
+    c:10,
+};
+let dest=Object.assign({},src,src1);
+
+console.log(dest);
+src.a++;
+console.log(dest);
+
 
 
