@@ -132,6 +132,13 @@ let rectu={
 }*/
 
 //for-of loop
-for(let key of Object.entries(rectu)){//jb key use kro tb length ,bredth  print hota hai
+/*for(let key of Object.entries(rectu)){//jb key use kro tb length ,bredth  print hota hai
     console.log(key);////jb entriesuse kro tb length 4,bredth 8 print hota hai
+}*/
+
+if('length' in rectu){
+    console.log('present');
+}
+else{
+    console.log('absent');
 }
