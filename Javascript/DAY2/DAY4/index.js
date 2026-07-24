@@ -87,11 +87,13 @@ let myRectangle = new Function('leng', 'bred', `
        }
 }; */ 
 
-let a=10;
+
+/*let a=10;
 let b=12;
 a++;
 console.log(a);
 console.log(b);
+*/
 
 
 let d={ value:45};
