@@ -180,7 +180,7 @@ console.log(dest);
 
 
 //object cloning3
-let src={
+/*let src={
     a:79,
     b:45,
     c:10,
@@ -190,7 +190,7 @@ let rest=Object.assign({},src,src1);
 
 console.log(...src);
 src.a++;
-console.log(rest);
+console.log(rest);*/
 
 
 
