@@ -64,8 +64,9 @@ let Rectangle = new Function('leng', 'bred', `
 `);
 
     //object creation using rectangle
-    let rect=new Rectangle1(2);
+    let rect=new Rectangle(2,6);
     console.log(rect);
+    rect.draw();
 
 
 
