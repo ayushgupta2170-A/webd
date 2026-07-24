@@ -183,12 +183,12 @@ let src={
     b:45,
     c:10,
 };
-console.log(dest);
-let dest=Object.assign({},src,src1);
+let rest={...src};
+let rest=Object.assign({},src,src1);
 
 console.log(...src);
 src.a++;
-console.log(dest);
+console.log(rest);
 
 
 
