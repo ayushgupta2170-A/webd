@@ -52,9 +52,13 @@ let courses=[
 console.log(courses);
 //console.log(courses.indexOf( {no:1,naam:'Ayush'}));//yha pr address alg hai
 
- let course = courses.find(function(course){
+/*let course = courses.find(function(course){
     return course.naam =='Ayush';
 })
-console.log(course);
+console.log(course);*/ //is nottaion ko chota krte hai
+
+let course = courses.find(course=>course.naam =='Ayush');
+
+
 
 
