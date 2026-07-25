@@ -61,6 +61,15 @@ let course = courses.find(course=>course.naam =='Ayush');
 
 console.log(course);
 
+//removing element
+let numbers3=[1,2,4,5,9,7,12];
+//end
+numbers3.pop();
+//begginning
+numbers3.shift();
+//middlenumbers.
+
+
 
 
 
