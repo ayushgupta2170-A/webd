@@ -42,7 +42,9 @@ if(numbers.indexOf(4)!= -1)
 //good practice
 console.log(numbers.includes(7));
 //advanced version
-numbers.indexOf(8,2);
-console.log(numbers.includes());
+console.log(numbers.indexOf(4,2));//ye primitive ke upr sikhs hai
+
+//ab refernces ke upr
+
 
 
