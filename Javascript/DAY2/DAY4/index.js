@@ -180,17 +180,22 @@ console.log(dest);
 
 
 //object cloning3
-/*let src={
-    a:79,
-    b:45,
-    c:10,
+let src = {
+    a: 79,
+    b: 45,
+    c: 10
 };
-let rest={...src};
-let rest=Object.assign({},src,src1);
 
-console.log(...src);
+// Spread operator se clone
+let clone1 = { ...src };
+
+// Object.assign se clone
+let clone2 = Object.assign({}, src);
+
+console.log(clone1);
+console.log(clone2);
+
 src.a++;
-console.log(rest);*/
-
+console.log(src);
 
 
