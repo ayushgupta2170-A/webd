@@ -25,6 +25,7 @@ let date3=new Date(1998,6,20,7);
 console.log(date3);*/
 
 
-             //Arrays
-             
+             //ARRAYS
+let numbers=[1,4,5,6,8];
+console.log(numbers);             
 
