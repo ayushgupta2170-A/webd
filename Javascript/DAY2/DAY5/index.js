@@ -59,6 +59,8 @@ console.log(course);*/ //is nottaion ko chota krte hai
 
 let course = courses.find(course=>course.naam =='Ayush');
 
+console.log(course);
+
 
 
 
