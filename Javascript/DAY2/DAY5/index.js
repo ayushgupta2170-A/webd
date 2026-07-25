@@ -7,9 +7,12 @@ let firstName=new String('love');
 /*let message = `This
 is my 
 house`;
-console.log(message);*/
+console.log(message);
+//let words=message.split('');
+//console.log(words);*/
 
-let message = `Hello ${lastName},
+
+/*let message = `Hello ${lastName},
 Thanks for the opportunity, 
 Regards,
 Ayush`;
@@ -19,12 +22,9 @@ let date=new Date();
 let date2=new Date('JUNE 20 1998 07:15');
 
 let date3=new Date(1998,6,20,7);
-console.log(date3);
+console.log(date3);*/
 
 
-
-
-//let words=message.split('');
-
-//console.log(words);
+             //Arrays
+             
 
