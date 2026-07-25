@@ -45,9 +45,11 @@ console.log(numbers.includes(7));
 console.log(numbers.indexOf(4,2));//ye primitive ke upr sikhs hai
 
 //ab refernces ke upr
-let course=[
-    {no:1,naam:'Ayush'},
+let courses=[
+    {no:1,naam:'Ayush'},//yha pr address alg hai
     {no:2,naam:'Gupta'}
 ];
+console.log(courses);
+console.log(courses.indexOf( {no:1,naam:'Ayush'}));//yha pr address alg hai
 
 
