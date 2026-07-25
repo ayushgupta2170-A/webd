@@ -53,7 +53,7 @@ console.log(courses);
 //console.log(courses.indexOf( {no:1,naam:'Ayush'}));//yha pr address alg hai
 
  let course=courses.find(function(course){
-    return courses,naam=='Ayush';
+    return course,naam=='Ayush';
 })
 console.log(course);
 
