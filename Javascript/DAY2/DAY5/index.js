@@ -32,5 +32,17 @@ console.log(numbers);
 //beginning->unshift;
 //middle->splice;
 //searching
-            
+console.log(numbers);
+console.log(numbers.indexOf(5));         
+
+//we want to check if no exist in arrys
+if(numbers.indexOf(4)!= -1)
+    console.log("present");//bad practice
+
+//good practice
+console.log(numbers.includes(7));
+//advanced version
+numbers.indexOf(8,2);
+console.log(numbers.includes());
+
 
