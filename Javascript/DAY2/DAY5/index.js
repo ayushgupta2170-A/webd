@@ -50,6 +50,10 @@ let courses=[
     {no:2,naam:'Gupta'}
 ];
 console.log(courses);
-console.log(courses.indexOf( {no:1,naam:'Ayush'}));//yha pr address alg hai
+//console.log(courses.indexOf( {no:1,naam:'Ayush'}));//yha pr address alg hai
+ let course=courses.find(function(coourse){
+    return courses,naam=='Ayush';
+})
+console.log(course);
 
 
