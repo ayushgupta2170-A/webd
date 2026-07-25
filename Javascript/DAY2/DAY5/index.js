@@ -3,8 +3,10 @@ console.log('hello sir');
 let lastName='Babbar';
 let firstName=new String('love');
 
-let message='this is my first message';
-let words=message.split('');
+let message='this is \n my \n first\n message';
+console.log(message);
 
-console.log(words);
+//let words=message.split('');
+
+//console.log(words);
 
