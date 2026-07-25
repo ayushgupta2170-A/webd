@@ -1,4 +1,4 @@
 console.log('hello sir');
 
-let latName='Babbar';
+let lastName='Babbar';
 let firstName=new String('love');
