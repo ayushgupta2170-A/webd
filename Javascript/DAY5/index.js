@@ -94,4 +94,8 @@ let person={
 /*get=fullName(){
     return `${person.fName} ${person.lName}`;//backTicks use kr rhe hai..
 }*/
+//console.log(person.fullName);
+person.fullName='Rahul Kumar';
 console.log(person.fullName);
+
+
