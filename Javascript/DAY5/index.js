@@ -68,4 +68,22 @@ function interest(p,q,r){//agr aap r=9 dete hai toh voh lega,, same q=5,
     return p*q*r/100;
 
 }
-console.log(interest(1000,10,5));
+//console.log(interest(1000,10,5));
+
+
+
+
+//......getter,setter......
+
+//getter->access properties
+//setter->change or mutate properties          
+let person={
+    fName:'Ayush',
+    lName:'Gupta',
+}
+//console.log(person);
+
+function fullName(){
+    return `${person.fName} ${person.lName}`;//backTicks use kr rhe hai..
+}
+console.log(fullName());
