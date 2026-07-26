@@ -180,5 +180,9 @@ console.log(filtered);
 
 
 //11...mapping ararays
-
+let numbers=[7,8,9,1,2];
+let items=numbers.map(function(value){
+    return 'student_no'+value;
+});
+console.log(items);
 
