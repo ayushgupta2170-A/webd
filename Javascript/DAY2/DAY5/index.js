@@ -194,12 +194,11 @@ console.log(items);
 let numbers=[1,2,-6,-5];
 let filtered=numbers.filter(value=>value>=0);
 
-let items=filtered.map(function(num){
-    return {value:num};
-    });
+//let items=filtered.map(function(num){
+//    return {value:num};
+//    });
+
   //change in arrow
-let items=filtered.map((num)=>{
-    return {value:num};
-    });  
+let items=filtered.map(num=>{value:num});  
 console.log(items);
 
