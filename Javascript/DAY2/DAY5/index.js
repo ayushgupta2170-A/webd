@@ -84,6 +84,12 @@ console.log(numbers2);
 */
 
 //4.....combining &slicing arrays
+let first=[1,2,3,5,6];
+let second=[4,8,9];
+
+let combined=first.concat(second);
+console.log(combined);
+
 
 
 
