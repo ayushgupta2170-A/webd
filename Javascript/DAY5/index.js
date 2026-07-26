@@ -80,10 +80,13 @@ function interest(p,q,r){//agr aap r=9 dete hai toh voh lega,, same q=5,
 let person={
     fName:'Ayush',
     lName:'Gupta',
-}
+    get fullName(){
+    return `${person.fName} ${person.lName}`;//backTicks use kr rhe hai..
+    }
+};
 //console.log(person);
 
-function fullName(){
+/*get=fullName(){
     return `${person.fName} ${person.lName}`;//backTicks use kr rhe hai..
-}
+}*/
 console.log(fullName());
