@@ -84,7 +84,7 @@ let person={
     return `${person.fName}  ${person.lName}`;//backTicks use kr rhe hai..
     },
     set fullName(value){
-        let parts=value.splits(' ');
+        let parts=value.split(' ');
         this.fName=parts[0];
         this.lName=parts[1];
     }
