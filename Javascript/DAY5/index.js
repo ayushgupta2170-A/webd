@@ -84,7 +84,7 @@ let person={
     return `${person.fName}  ${person.lName}`;//backTicks use kr rhe hai..
     },
     set fullName(value){
-        if(typeof value!=='string'){
+        if(typeof value!==String){
             throw new Error("you have not sent a string");
         }
         let parts=value.split(' ');
