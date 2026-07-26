@@ -179,11 +179,24 @@ console.log(filtered);
 */
 
 
+/*
 //11...mapping ararays
 let numbers=[7,8,9,1,2];
 console.log(numbers);
 let items=numbers.map(function(value){
     return 'student_no'+value;
+});
+console.log(items);
+*/
+
+
+//12...mapping objects
+let numbers=[1,2,-6,-5];
+let filtered=numbers.filter(value=>vlaue=>0);
+
+let items=filtered.map(function(num){
+    return {value:num};
+    
 });
 console.log(items);
 
