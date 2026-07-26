@@ -57,19 +57,29 @@ console.log(courses);
 })
 console.log(course);*/ //is nottaion ko chota krte hai
 
-let course = courses.find(course=>course.naam =='Ayush');
+//let course = courses.find(course=>course.naam =='Ayush');
+//console.log(course);
 
-console.log(course);
-
-//removing element
+/*
+//Removing element
 let numbers3=[1,2,4,5,9,7,12];
 //end
 numbers3.pop();
 //begginning
 numbers3.shift();
 //middlenumbers.
+*/
 
 
+//Emptying an array
+let numbers=[1,2,3,4,5];
+let numbers2=numbers;
+
+//numbers=[];
+numbers.length=0;
+
+console.log(numbers);
+console.log(numbers2);
 
 
 
