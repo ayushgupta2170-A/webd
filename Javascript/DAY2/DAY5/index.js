@@ -24,7 +24,7 @@ let date2=new Date('JUNE 20 1998 07:15');
 let date3=new Date(1998,6,20,7);
 console.log(date3);*/
 
-
+/*
 //1.........ARRAYS
 let numbers=[1,4,5,6,8];
 console.log(numbers); 
@@ -44,6 +44,7 @@ console.log(numbers.includes(7));
 //advanced version
 console.log(numbers.indexOf(4,2));//ye primitive ke upr sikhs hai
 
+
 //ab refernces ke upr
 let courses=[
     {no:1,naam:'Ayush'},//yha pr address alg hai
@@ -51,6 +52,8 @@ let courses=[
 ];
 console.log(courses);
 //console.log(courses.indexOf( {no:1,naam:'Ayush'}));//yha pr address alg hai
+*/
+
 
 /*let course = courses.find(function(course){
     return course.naam =='Ayush';
@@ -84,6 +87,7 @@ console.log(numbers2);
 */
 
 
+
 /*
 //4.....combining &slicing arrays
 let first=[1,2,3,5,6];
@@ -100,6 +104,7 @@ console.log(sliced);
 */
 
 
+
 /*
 //5......Spread operator
 let first=[1,2,3,5,6];
@@ -110,6 +115,7 @@ console.log(combined);
 //copy kaise create kre
 let another=[...combined];
 */
+
 
 
 /*
@@ -127,6 +133,7 @@ arr.forEach(number=>console.log(number));//alternate method of for-each loop in 
 */
 
 
+
 /*
 //7....joining arary
 let numberss=[10,20,30,50,60];
@@ -135,6 +142,8 @@ console.log(joined);
 */
 
 
+
+/*
 //8....splits
 let message='This is my first message';
 let parts=message.split(' ');
@@ -142,3 +151,14 @@ console.log(parts);
 
 let joined=parts.join('__\n');
 console.log(joined);
+*/
+
+
+
+//9.......Sorting arrays
+let numbers1=[12,10,50,30,80,70,90];
+numbers1.sort();
+console.log(numbers1);
+
+numbers1.reverse();
+console.log(numbers1);
