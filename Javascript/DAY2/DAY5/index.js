@@ -192,7 +192,7 @@ console.log(items);
 
 //12...mapping objects
 let numbers=[1,2,-6,-5];
-let filtered=numbers.filter(value=>vlaue=>0);
+let filtered=numbers.filter(value=>value>=0);
 
 let items=filtered.map(function(num){
     return {value:num};
