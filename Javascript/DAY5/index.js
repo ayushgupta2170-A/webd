@@ -82,6 +82,11 @@ let person={
     lName:'Gupta',
     get fullName(){
     return `${person.fName} ${person.lName}`;//backTicks use kr rhe hai..
+    },
+    set fullName(value){
+        let parts=value.splits(' ');
+        this.fName=parts[0];
+        this.lName=parts[1];
     }
 };
 //console.log(person);
