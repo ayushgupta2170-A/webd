@@ -76,8 +76,8 @@ let numbers1=[1,2,3,4,5];
 let numbers2=numbers1;
 
 //numbers=[];
-//numbers1.length=0;
-numbers.splice(0,numbers1.length);
+//numbers1.length=0;//ye bhi acchin practice  hai
+numbers1.splice(0,numbers1.length);//ye bhi acchi pracatice hai
 
 console.log(numbers1);
 console.log(numbers2);
