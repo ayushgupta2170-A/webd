@@ -76,7 +76,8 @@ function interest(p,q,r){//agr aap r=9 dete hai toh voh lega,, same q=5,
 //......getter,setter......
 
 //getter->access properties
-//setter->change or mutate properties          
+//setter->change or mutate properties
+/*          
 let person={
     fName:'Ayush',
     lName:'Gupta',
@@ -98,6 +99,7 @@ let person={
     return `${person.fName} ${person.lName}`;//backTicks use kr rhe hai..
 }*/
 //console.log(person.fullName);
+/*
 try{
     person.fullName=true;
 }
@@ -106,5 +108,20 @@ catch(e){
 }
 //person.fullName='Rahul Kumar';
 console.log(person.fullName);
+*/
 
+
+//SCOPES......
+/*
+{
+    //let a=5;
+    var a=5;
+    //console.log(a);
+}
+console.log(a);
+*/
+function walk(){
+    var a=5;//var fx tk hi define hai
+}
+console.log(a);
 
