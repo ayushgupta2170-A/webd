@@ -70,10 +70,10 @@ numbers3.shift();
 //middlenumbers.
 */
 
-
+/*
 //3.......Emptying an array
 let numbers1=[1,2,3,4,5];
-let numbers2=numbers1;
+let numbers2=numbers1;//yha pr copy nhi hua hai ,address mila hai 
 
 //numbers=[];
 //numbers1.length=0;//ye bhi acchin practice  hai
@@ -81,6 +81,9 @@ numbers1.splice(0,numbers1.length);//ye bhi acchi pracatice hai
 
 console.log(numbers1);
 console.log(numbers2);
+*/
+
+//4.....combining &slicing arrays
 
 
 
