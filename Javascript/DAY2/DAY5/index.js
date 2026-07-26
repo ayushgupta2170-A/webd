@@ -84,6 +84,7 @@ console.log(numbers2);
 */
 
 
+/*
 //4.....combining &slicing arrays
 let first=[1,2,3,5,6];
 let second=[4,8,9];
@@ -96,5 +97,8 @@ let sliced=marks.slice(2);
 //let sliced=marks.slice();
 //let sliced=marks.slice(2,5);//yha pr jo 2th index hai voh nclude hai aur 5th exclude hai
 console.log(sliced);
+*/
+
+
 
 
