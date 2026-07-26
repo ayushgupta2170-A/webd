@@ -24,3 +24,7 @@ stand();//inn case of function assignment ye niche hi likhna pdega as comapared 
 let jump=stand;
 jump();
 stand2();
+
+let x=1;
+x='a';
+console.log(x);
