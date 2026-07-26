@@ -81,7 +81,7 @@ let person={
     fName:'Ayush',
     lName:'Gupta',
     get fullName(){
-    return `${person.fName} ${person.lName}`;//backTicks use kr rhe hai..
+    return `${person.fName}  ${person.lName}`;//backTicks use kr rhe hai..
     },
     set fullName(value){
         let parts=value.splits(' ');
@@ -94,4 +94,4 @@ let person={
 /*get=fullName(){
     return `${person.fName} ${person.lName}`;//backTicks use kr rhe hai..
 }*/
-console.log(fullName());
+console.log(person.fullName);
