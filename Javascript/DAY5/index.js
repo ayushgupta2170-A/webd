@@ -63,7 +63,9 @@ sum(1,2,3,4,5,6);//1 num ke andr chla gya,2 value ke andr
 
 
 //DEFAULT PARAMETER
-function interest(p,q,r){
+function interest(p,q,r){//agr aap r=9 dete hai toh voh lega,, same q=5,
+    //r=5;//agr aap r=5 dete hai toh voh  yevala lega nhi toh voh upr vali apne aap lega,,
     return p*q*r/100;
+
 }
 console.log(interest(1000,10,5));
