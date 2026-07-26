@@ -138,11 +138,18 @@ console.log(a);
 //   var a=5;
 //}
 //console.log(a);
-
+/*
 function a(){
     const ab=5;
 }
 const ab=5;
 function b(){
     const ab=5;
-}
+}*/
+
+
+
+
+
+//REDUCING ARRay
+
