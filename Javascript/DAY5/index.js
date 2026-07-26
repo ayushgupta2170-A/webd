@@ -33,6 +33,8 @@ console.log(x);
     console.log(arguments);
     return a+b;
 }*/
+
+/*
 function sum(a,b){
     let total=0;
     for(let value of arguments)
@@ -46,3 +48,13 @@ function sum(a,b){
 
 let ans=sum(2,3,4,5,6);
 console.log(ans);
+*/
+
+
+
+      //REST OPERATOR
+
+function sum(num,value,...args){//last parameter ke aage allowed nhi  hai
+    console.log(args);
+}
+sum(1,2,3,4,5,6);//1 num ke andr chla gya,2 value ke andr
