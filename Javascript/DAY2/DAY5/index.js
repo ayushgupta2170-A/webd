@@ -154,7 +154,7 @@ console.log(joined);
 */
 
 
-
+/*
 //9.......Sorting arrays
 let numbers1=[12,10,50,30,80,70,90];
 numbers1.sort();
@@ -162,3 +162,10 @@ console.log(numbers1);
 
 numbers1.reverse();
 console.log(numbers1);
+*/
+
+
+
+//filtering arrays
+
+
