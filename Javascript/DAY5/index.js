@@ -37,12 +37,12 @@ function sum(a,b){
     let total=0;
     for(let value of arguments)
         total=total+value ;
-    return a+b;
+    return total;
 }
-console.log(sum(3,4));
-console.log(sum(1));//dusri value not defined maani jayegi
-console.log(sum());
-console.log(sum(1,2,0,4,5,6));//phle ke do liye jayenge
+//console.log(sum(3,4));
+//console.log(sum(1));//dusri value not defined maani jayegi
+//console.log(sum());
+//console.log(sum(1,2,0,4,5,6));//phle ke do liye jayenge
 
-let ans=sum(9,2,3,4,5,6);
+let ans=sum(2,3,4,5,6);
 console.log(ans);
