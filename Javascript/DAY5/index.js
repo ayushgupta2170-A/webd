@@ -84,6 +84,9 @@ let person={
     return `${person.fName}  ${person.lName}`;//backTicks use kr rhe hai..
     },
     set fullName(value){
+        if(typeof value!=='string'){
+            throw new Error("you have not sent a string");
+        }
         let parts=value.split(' ');
         this.fName=parts[0];
         this.lName=parts[1];
@@ -95,7 +98,13 @@ let person={
     return `${person.fName} ${person.lName}`;//backTicks use kr rhe hai..
 }*/
 //console.log(person.fullName);
-person.fullName='Rahul Kumar';
+try{
+    person.fullName=true;
+}
+catch(e){
+    alert(e);
+}
+//person.fullName='Rahul Kumar';
 console.log(person.fullName);
 
 
