@@ -127,8 +127,18 @@ arr.forEach(number=>console.log(number));//alternate method of for-each loop in 
 */
 
 
+/*
 //7....joining arary
+let numberss=[10,20,30,50,60];
+const joined=numberss.join(',');
+console.log(joined);
+*/
 
 
+//8....splits
+let message='This is my first message';
+let parts=message.split(' ');
+console.log(parts);
 
-
+let joined=parts.join('__\n');
+console.log(joined);
