@@ -12,6 +12,7 @@ console.log(message);
 //console.log(words);*/
 
 
+
 /*let message = `Hello ${lastName},
 Thanks for the opportunity, 
 Regards,
@@ -23,6 +24,7 @@ let date2=new Date('JUNE 20 1998 07:15');
 
 let date3=new Date(1998,6,20,7);
 console.log(date3);*/
+
 
 /*
 //1.........ARRAYS
@@ -189,7 +191,7 @@ let items=numbers.map(function(value){
 console.log(items);
 */
 
-
+/*
 //12...mapping objects
 let numbers=[1,2,-6,-5];
 let filtered=numbers.filter(value=>value>=0);
@@ -201,4 +203,19 @@ let filtered=numbers.filter(value=>value>=0);
   //change in arrow
 let items=filtered.map(num=>{value:num});  
 console.log(items);
+*/
+
+
+/*
+//13...chaning method
+let numbers=[1,2,-6,-5];
+let items= numbers
+           .filter(value=>value>=0)
+           .map(num=>{value:num});
+console.log(items);
+*/
+
+
+//14....reducing array
+
 
