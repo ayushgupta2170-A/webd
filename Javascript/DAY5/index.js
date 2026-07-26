@@ -53,8 +53,17 @@ console.log(ans);
 
 
       //REST OPERATOR
-
+/*
 function sum(num,value,...args){//last parameter ke aage allowed nhi  hai
     console.log(args);
 }
 sum(1,2,3,4,5,6);//1 num ke andr chla gya,2 value ke andr
+*/
+
+
+
+//DEFAULT PARAMETER
+function interest(p,q,r){
+    return p*q*r/100;
+}
+console.log(interest(1000,10,5));
