@@ -161,10 +161,14 @@ console.log(a);
 
 
 //REDUCING ARRay
-let arr=[1,2,3,4,5];
+/*let arr=[1,2,3,4,5];
 let total=0;
 
 for(let value of arr)
     total=total+value;
 console.log(total);
-
+*/
+let arr=[1,2,3,5,6];
+let totalSum=arr.reduce((accumulator,currentValue)=>accumulator + currentValue,0);
+console.log("printing total sum");
+console.log(totalSum);
