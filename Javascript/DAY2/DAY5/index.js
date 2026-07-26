@@ -112,10 +112,23 @@ let another=[...combined];
 */
 
 
+/*
 //6.....iterating array
 let arr=[10,20,30,40,50];
-for(let value of arr){
-    console.log(value);
-}
+//for(let value of arr){
+//    console.log(value);
+//}
+
+//arr.forEach(function(number){
+//    console.log(number);
+//});  //isko agr arrow fx mein likhna hai
+
+arr.forEach(number=>console.log(number));//alternate method of for-each loop in 1 line
+*/
+
+
+//7....joining arary
+
+
 
 
