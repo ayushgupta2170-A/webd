@@ -149,7 +149,22 @@ function b(){
 
 
 
+/*
+//SORTING
+let a=[10,5,4,89,8];
+a.sort(function(a,b){
+    return a-b;
+});
+console.log(a);
+*/
+
 
 
 //REDUCING ARRay
+let arr=[1,2,3,4,5];
+let total=0;
+
+for(let value of arr)
+    total=total+value;
+console.log(total);
 
