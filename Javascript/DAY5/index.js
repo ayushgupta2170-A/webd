@@ -120,8 +120,28 @@ console.log(person.fullName);
 }
 console.log(a);
 */
+/*
 function walk(){
     var a=5;//var fx tk hi define hai
 }
 console.log(a);
+*/
 
+//for(var i=0;i<10;i++){
+
+//}
+//console.log(i);
+//in case of let nhi milega output,but in var ans milega 10
+
+//if (true){
+   //let a=5;
+//   var a=5;
+//}
+//console.log(a);
+
+function a(){
+    const a=5;
+}
+function b(){
+    const a=5;
+}
