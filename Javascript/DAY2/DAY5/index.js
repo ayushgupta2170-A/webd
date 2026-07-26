@@ -196,7 +196,10 @@ let filtered=numbers.filter(value=>value>=0);
 
 let items=filtered.map(function(num){
     return {value:num};
-    
-});
+    });
+  //change in arrow
+let items=filtered.map((num)=>{
+    return {value:num};
+    });  
 console.log(items);
 
