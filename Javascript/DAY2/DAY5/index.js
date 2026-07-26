@@ -25,7 +25,7 @@ let date3=new Date(1998,6,20,7);
 console.log(date3);*/
 
 
-             //ARRAYS
+//1.........ARRAYS
 let numbers=[1,4,5,6,8];
 console.log(numbers); 
 //end->push
@@ -61,7 +61,7 @@ console.log(course);*/ //is nottaion ko chota krte hai
 //console.log(course);
 
 /*
-//Removing element
+//2......Removing element
 let numbers3=[1,2,4,5,9,7,12];
 //end
 numbers3.pop();
@@ -71,7 +71,7 @@ numbers3.shift();
 */
 
 
-//Emptying an array
+//3.......Emptying an array
 let numbers1=[1,2,3,4,5];
 let numbers2=numbers1;
 
