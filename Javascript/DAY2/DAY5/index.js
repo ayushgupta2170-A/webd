@@ -100,5 +100,19 @@ console.log(sliced);
 */
 
 
+/*
+//5......Spread operator
+let first=[1,2,3,5,6];
+let second=[4,8,9];
+
+let combined=[...first,'a',true, ...second ,'b',false];
+console.log(combined);
+//copy kaise create kre
+let another=[...combined];
+*/
+
+
+//6.....iterating array
+
 
 
