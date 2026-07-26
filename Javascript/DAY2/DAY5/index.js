@@ -166,6 +166,19 @@ console.log(numbers1);
 
 
 
-//filtering arrays
+/*
+//10.....filtering arrays
+let number=[1,3,-5,-6,-7,0];
+//let filtered=number.filter(function(value){//ye engthy method
+//    return value<=0;
+//});
+     //in arraow fx
+let filtered=number.filter(value=>value<=0);     
+
+console.log(filtered);
+*/
+
+
+//11...mapping ararays
 
 
