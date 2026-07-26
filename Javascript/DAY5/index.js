@@ -114,8 +114,8 @@ console.log(person.fullName);
 //SCOPES......
 /*
 {
-    //let a=5;
-    var a=5;
+    //let a=5;  //a ki value in brackets ke bahar nhi access kr skte
+    var a=5;  //ye bahahr access kr skta hai
     //console.log(a);
 }
 console.log(a);
