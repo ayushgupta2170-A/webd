@@ -55,3 +55,5 @@ document.body.appendChild(myDiv);
 */
 
 
+
+let element=document
