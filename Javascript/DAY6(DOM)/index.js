@@ -5,8 +5,13 @@ function eventFunction(){
 document.addEventListener('click',eventFunction);
 
 //remove eventListener
-function eventFunction(){
+/*function eventFunction(){
     console.log('I have clicked on the document ')
 };
 
 document.removeEventListener('click',eventFunction);//click ke baad jo likha ghai voh fx hai 
+*/
+const content = document.querySelector('#wrapper');
+content.addEventListener('click',function(event){
+    console.log(event);
+})
