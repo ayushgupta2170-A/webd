@@ -3,3 +3,10 @@ function eventFunction(){
 };
 
 document.addEventListener('click',eventFunction);
+
+//remove eventListener
+function eventFunction(){
+    console.log('I have clicked on the document ')
+};
+
+document.removeEventListener('click',eventFunction);
