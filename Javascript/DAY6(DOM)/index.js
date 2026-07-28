@@ -41,7 +41,7 @@ thirdLink.addEventListener('click',function(event){
 let myDiv=document.createElement('div');
 
 function paraStatus(){
-    console.log('I have clicked on the document ');
+    console.log('Para'+event.target.textContent);
 }
 myDiv.addEventListener('click',paraStatus);
 
