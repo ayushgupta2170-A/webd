@@ -1,8 +1,12 @@
-function eventFunction(){
+
+/*function eventFunction(){
     console.log('I have clicked on the document ')
 };
 
 document.addEventListener('click',eventFunction);
+*/
+
+
 
 //remove eventListener
 /*function eventFunction(){
@@ -37,7 +41,7 @@ thirdLink.addEventListener('click',function(event){
 let myDiv=document.createElement('div');
 
 for(let i=1;i<=100;i++){
-    let newElement=document.createElement('a');
+    let newElement=document.createElement('p');
     newElement.textContent='this is para' + i;
 
     newElement.addEventListener('click',function(event){
