@@ -11,6 +11,8 @@ document.addEventListener('click',eventFunction);
 
 document.removeEventListener('click',eventFunction);//click ke baad jo likha ghai voh fx hai 
 */
+
+//eventObject
 const content = document.querySelector('#wrapper');
 content.addEventListener('click',function(event){
     console.log(event);
