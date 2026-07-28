@@ -38,11 +38,11 @@ let myDiv=document.createElement('div');
 
 for(let i=1;i<=100;i++){
     let newElement=document.createElement('a');
-    newElement.textContent='this is para'+i;
+    newElement.textContent='this is para' + i;
 
     newElement.addEventListener('click',function(event){
     console.log('i have clicked on para');
 });
    myDiv.appendChild(newElement);
 }
-document.appendChild(myDiv);   
+document.body.appendChild(myDiv);   
