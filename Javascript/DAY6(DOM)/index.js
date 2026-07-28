@@ -57,6 +57,9 @@ document.body.appendChild(myDiv);
 
 
 let element=document.querySelector('#wrapper');
+
 element.addEventListener('click',function(event){
-    console.log('span pr click kia hai' + event.target.textContent);
-})
+    if(event.target.nodeName=='SPAN'){
+     console.log('span pr click kia hai' + event.target.textContent);   
+    }
+});
