@@ -37,7 +37,7 @@ thirdLink.addEventListener('click',function(event){
 */
 
 
-
+/*
 let myDiv=document.createElement('div');
 
 function paraStatus(){
@@ -52,3 +52,6 @@ for(let i=1;i<=100;i++){
    myDiv.appendChild(newElement);
 }
 document.body.appendChild(myDiv);   
+*/
+
+
