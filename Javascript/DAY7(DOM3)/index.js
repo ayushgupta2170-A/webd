@@ -1,7 +1,7 @@
 //adding 100para
 const t1=performance.now();
 for(let i=0;i<=100;i++){
-    let newElement=document.createElement('p');
+    let newElement=document.createElement('p'); 
     newElement.textContent='this is para'+i;
 
     document.body.appendChild(newElement);
