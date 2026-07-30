@@ -44,6 +44,7 @@ document.body.appendChild(fragment);//1 Reflow,1 repaint
 */
 
 
+/*
 //call stack
 function addPara(){
     let para=document.createElement('p');
@@ -58,4 +59,12 @@ function appendNewMessage(){
 }
 addPara();
 appendNewMessage();
+
+document.addEventListener('click',function(){
+    console.log('hello di');
+});
+*/
+
+
+
 
