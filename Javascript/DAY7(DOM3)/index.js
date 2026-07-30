@@ -42,3 +42,6 @@ for(let i=0;i<=100;i++){
 }
 document.body.appendChild(fragment);//1 Reflow,1 repaint
 */
+
+
+//call stack
