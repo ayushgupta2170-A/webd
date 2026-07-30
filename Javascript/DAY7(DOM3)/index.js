@@ -23,4 +23,4 @@ for(let i=0;i<=100;i++){
 }
 document.body.appendChild(myDiv);
 const t4=performance.now();
-console.log('this took'+(t4-t3)+'ms');
+console.log('this took'+(t4-t3)+"ms");
