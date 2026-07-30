@@ -7,13 +7,14 @@ for(let i=0;i<=100;i++){
     document.body.appendChild(newElement);
 }
 const t2=performance.now();
-console.log('this took'+(t2-t1)+'ms');
+console.log('this took'+(t2-t1)+"ms");
 
 
-/*
+
 //optimising a bit
-let myDiv=document.createElement('div');
 
+let myDiv=document.createElement('div');
+const t3=performance.now();
 for(let i=0;i<=100;i++){
     let element=document.createElement('p');
     element.textContent='this is para'+i;
@@ -21,4 +22,5 @@ for(let i=0;i<=100;i++){
     myDiv.appendChild(element);
 }
 document.body.appendChild(myDiv);
-*/
+const t4=performance.now();
+console.log('this took'+(t4-t3)+'ms');
