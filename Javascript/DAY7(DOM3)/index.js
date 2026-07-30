@@ -45,3 +45,17 @@ document.body.appendChild(fragment);//1 Reflow,1 repaint
 
 
 //call stack
+function addPara(){
+    let para=document.createElement('p');
+    para.textContent='Bollywood silver screen';
+    document.body.appendChild(para);
+}
+
+function appendNewMessage(){
+    let para=document.createElement('p');
+    para.textContent='welcome in bollwood';
+    document.body.appendChild(para);
+}
+addPara();
+appendNewMessage();
+
