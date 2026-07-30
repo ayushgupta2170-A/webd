@@ -29,10 +29,16 @@ console.log('this took'+(t4-t3)+"ms");
 */
 
 
+/*
 //using fragment
+let fragment=document.createDocumentFragment();
 for(let i=0;i<=100;i++){
     let newElement=document.createElement('p'); 
     newElement.textContent='this is para'+i;
 
+    fragment.appendChild(newElement);
+
     document.body.appendChild(newElement);
 }
+document.body.appendChild(fragment);//1 Reflow,1 repaint
+*/
