@@ -53,11 +53,12 @@ let wadaa1=new Promise(function(resolve,reject){
     console.log('set timeout1 started');
     },2000);
 })
+
 let output=wadaa1.then(()=>{
 let wadaa2=new Promise(function(resolve,reject){  
     resolve("wadaa 2 resolved");  
 })
 return wadaa2;
 });
-then((value)=>console.log(val));
+output.then((value)=>console.log(val));
 
