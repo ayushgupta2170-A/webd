@@ -22,10 +22,11 @@ let meraPromise1=new Promise(function(resolve,reject){
     setTimeout(function(){
         console.log('i am fresher1');
     },3000);
-    //resolve(2233);
+    resolve(2233);
     //reject(new Error('bhaisahab error aa rhi'))
 });
 console.log('phla1');
+
 
 let meraPromise2=new Promise(function(resolve,reject){
     setTimeout(function(){
