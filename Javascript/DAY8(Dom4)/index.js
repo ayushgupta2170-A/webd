@@ -28,7 +28,7 @@ let meraPromise1=new Promise(function(resolve,reject){
     
 });
 //console.log('phla1');
-meraPromise1.then((value)=>{console.log(value)});
+meraPromise1.then((value) => {console.log(value)});
 
 
 /*
