@@ -95,6 +95,7 @@ let HM=await hardoiMausam;
 return [MM,HM];
 }*/
 
-
+         //fetch api
+let content=fetch('https://jsonplaceholder.typicode.com/posts/1');         
 
 
