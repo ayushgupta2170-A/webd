@@ -52,10 +52,14 @@ let wadaa1=new Promise(function(resolve,reject){
     setTimeout(()=>{
     console.log('set timeout1 started');
     },2000);
+    resolve(true);
 })
 
 let output=wadaa1.then(()=>{
 let wadaa2=new Promise(function(resolve,reject){  
+    setTimeout(()=>{
+          console.log('setimeout started1');
+    },3000);
     resolve("wadaa 2 resolved");  
 })
 return wadaa2;
