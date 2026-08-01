@@ -60,5 +60,5 @@ let wadaa2=new Promise(function(resolve,reject){
 })
 return wadaa2;
 });
-output.then((value)=>console.log(val));
+output.then((value)=>console.log(value));
 
