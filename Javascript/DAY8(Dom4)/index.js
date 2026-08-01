@@ -121,7 +121,7 @@ async function helper(){
     };
     let content=await fetch('https://jsonplaceholder.typicode.com/posts',options);
     let response=content.json();
-    return 
+    return response;
     
 }
 
