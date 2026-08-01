@@ -111,12 +111,13 @@ utility();
 async function helper(){
     let options={
         body:JSON.stringify({
+            method:'POST',
             title:'ayush',
             body:'gupta',
             userId:19,
         }),
         headers:{
-            'content-type':'application/json;charset=UTF-8',
+            'Content-Type':'application/json; charset=UTF-8',
         },
     };
     let content=await fetch('https://jsonplaceholder.typicode.com/posts',options);
