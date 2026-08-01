@@ -30,6 +30,9 @@ let meraPromise1=new Promise(function(resolve,reject){
 //console.log('phla1');
 meraPromise1.then((value) => {console.log(value)});
 
+meraPromise1.catch((value) => {console.log("recieed an error")});
+
+
 
 /*
 let meraPromise2=new Promise(function(resolve,reject){
