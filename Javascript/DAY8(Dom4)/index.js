@@ -108,6 +108,9 @@ console.log(output);
 utility();  
 */
 
+
+
+/*
 async function helper(){
 
     let options={
@@ -131,7 +134,15 @@ async function utility(){
     console.log(ans);
     
 }
-utility();
+utility();*/
+
+function init(){
+    let name="Samsung";
+    function displayName(){
+        console.log(name);
+    }
+    displayName();
+}
 
 
 
