@@ -71,7 +71,20 @@ output.then((value)=>console.log(value));
 
 
         //async wait
-async function abcd() {
+/*async function abcd() {
     return "ayush";
-}        
+} */
+
+let maharashtraMausam=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("delhi mein bahutgarmi hai");
+    },1000);
+})    
+
+
+let hardoiMausam=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("hardoi mein mausam bdiya hai");
+    },5000);
+});    
 
