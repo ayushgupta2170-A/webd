@@ -125,6 +125,12 @@ async function helper(){
     return response;
     
 }
+async function utility(){
+    let ans= await helper();
+    console.log(ans);
+    
+}
+utility();
 
 
 
