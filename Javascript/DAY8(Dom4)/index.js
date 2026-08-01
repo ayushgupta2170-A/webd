@@ -109,9 +109,10 @@ utility();
 */
 
 async function helper(){
+
     let options={
+         method:'POST',
         body:JSON.stringify({
-            method:'POST',
             title:'ayush',
             body:'gupta',
             userId:19,
