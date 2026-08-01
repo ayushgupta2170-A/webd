@@ -147,5 +147,19 @@ function init(){
 let fun=init();
 fun();
 
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet() {
+    console.log("Hello " + this.name);
+  }
+}
+
+const p1 = new Person("Ayush");
+p1.greet();
+
+
 
 
