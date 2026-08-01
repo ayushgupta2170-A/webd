@@ -18,11 +18,20 @@ console.log('second');
 */
 
 
-let meraPromise=new Promise(function(resolve,reject){
+let meraPromise1=new Promise(function(resolve,reject){
     setTimeout(function(){
-        console.log('i am fresher');
+        console.log('i am fresher1');
+    },3000);
+    //resolve(2233);
+    //reject(new Error('bhaisahab error aa rhi'))
+});
+console.log('phla1');
+
+let meraPromise2=new Promise(function(resolve,reject){
+    setTimeout(function(){
+        console.log('i am fresher2');
     },5000);
     //resolve(2233);
-    reject(new Error('bhaisahab error aa rhi'))
+    //reject(new Error('bhaisahab error aa rhi'))
 });
-console.log('phla');
+console.log('phla2');
