@@ -22,8 +22,8 @@ let meraPromise1=new Promise(function(resolve,reject){
     setTimeout(function(){
         console.log('i am fresher1');
     },3000);
-    //resolve(2233);
-    return 2;
+    resolve(2233);
+    //return 2;
     //reject(new Error('bhaisahab error aa rhi'))
     
 });
