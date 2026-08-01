@@ -47,6 +47,8 @@ let meraPromise2=new Promise(function(resolve,reject){
 console.log('phla2');
 */
 
+
+/*
           //multiple promise
 let wadaa1=new Promise(function(resolve,reject){
     setTimeout(()=>{
@@ -65,4 +67,11 @@ let wadaa2=new Promise(function(resolve,reject){
 return wadaa2;
 });
 output.then((value)=>console.log(value));
+*/
+
+
+        //async wait
+async function abcd() {
+    return "ayush";
+}        
 
