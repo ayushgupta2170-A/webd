@@ -142,7 +142,7 @@ function init(){
     function displayName(){
         console.log(name);
     }
-    displayName();
+     return displayName();
 }
 let fun=init();
 fun();
