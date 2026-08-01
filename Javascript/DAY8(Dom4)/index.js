@@ -75,6 +75,9 @@ output.then((value)=>console.log(value));
     return "ayush";
 } */
 
+
+
+async function utility(){
 let maharashtraMausam=new Promise((resolve,reject)=>{
     setTimeout(()=>{
         resolve("delhi mein bahutgarmi hai");
@@ -86,5 +89,10 @@ let hardoiMausam=new Promise((resolve,reject)=>{
     setTimeout(()=>{
         resolve("hardoi mein mausam bdiya hai");
     },5000);
-});    
+}); 
+let MM=maharashtraMausam;
+let HM=hardoiMausam;
+
+return [MM,HM];
+}
 
