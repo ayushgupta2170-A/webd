@@ -18,6 +18,7 @@ console.log('second');
 */
 
 
+/*
 let meraPromise1=new Promise(function(resolve,reject){
     setTimeout(function(){
         console.log('i am fresher1');
@@ -33,8 +34,7 @@ let meraPromise1=new Promise(function(resolve,reject){
 //meraPromise1.catch((value) => {console.log("recieed an error")});
        //aise likh skte hai
 meraPromise1.then((value) => {console.log(value)},(error)=>{console.log("recieed an error")});
-
-
+*/
 
 /*
 let meraPromise2=new Promise(function(resolve,reject){
@@ -46,3 +46,6 @@ let meraPromise2=new Promise(function(resolve,reject){
 });
 console.log('phla2');
 */
+
+          //multiple promise
+let          
