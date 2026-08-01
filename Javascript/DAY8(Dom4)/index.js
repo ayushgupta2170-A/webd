@@ -81,17 +81,17 @@ async function utility(){
 let maharashtraMausam=new Promise((resolve,reject)=>{
     setTimeout(()=>{
         resolve("delhi mein bahutgarmi hai");
-    },1000);
+    },10000);
 })    
 
 
 let hardoiMausam=new Promise((resolve,reject)=>{
     setTimeout(()=>{
         resolve("hardoi mein mausam bdiya hai");
-    },5000);
+    },6000);
 }); 
-let MM=maharashtraMausam;
-let HM=hardoiMausam;
+let MM= await maharashtraMausam;
+let HM=await hardoiMausam;
 
 return [MM,HM];
 }
