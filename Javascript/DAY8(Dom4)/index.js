@@ -144,7 +144,8 @@ function init(){
     }
     displayName();
 }
-init();
+let fun=init();
+fun();
 
 
 
