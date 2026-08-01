@@ -20,7 +20,9 @@ console.log('second');
 
 let meraPromise=new Promise(function(resolve,reject){
     setTimeout(function(){
-        HTMLFormControlsCollection.log('i am fresher');
+        console.log('i am fresher');
     },5000);
-    resolve(2233);
-})
+    //resolve(2233);
+    reject(new Error('bhaisahab error aa rhi'))
+});
+console.log('phla');
