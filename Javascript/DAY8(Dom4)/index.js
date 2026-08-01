@@ -160,6 +160,13 @@ class Person {
 const p1 = new Person("Ayush");
 p1.greet();
 
+// math.js
+export function add(a, b) {
+  return a + b;
+}
+// app.js
+import { add } from "./math.js";
+
 
 
 
