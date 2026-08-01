@@ -48,4 +48,15 @@ console.log('phla2');
 */
 
           //multiple promise
-let          
+let wadaa1=new Promise(function(resolve,reject){
+    setTimeout(()=>{
+    console.log('set timeout1 started');
+    },2000);
+})
+wadaa1.then(()=>{
+let wadaa2=new Promise(function(resolve,reject){  
+    resolve("wadaa 2 resolved");  
+})
+return wadaa2;
+});then((value)=>console.log(val));
+
