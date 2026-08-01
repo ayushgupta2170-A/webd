@@ -6,6 +6,7 @@ sync();
 console.log('second');
 */
 
+/*
 setTimeout(function(){
     console.log('third');
 },5000)
@@ -14,3 +15,12 @@ function sync(){
 }
 sync();
 console.log('second');
+*/
+
+
+let meraPromise=new Promise(function(resolve,reject){
+    setTimeout(function(){
+        HTMLFormControlsCollection.log('i am fresher');
+    },5000);
+    resolve(2233);
+})
