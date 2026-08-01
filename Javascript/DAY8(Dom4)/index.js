@@ -28,9 +28,11 @@ let meraPromise1=new Promise(function(resolve,reject){
     
 });
 //console.log('phla1');
-meraPromise1.then((value) => {console.log(value)});
 
-meraPromise1.catch((value) => {console.log("recieed an error")});
+//meraPromise1.then((value) => {console.log(value)});
+//meraPromise1.catch((value) => {console.log("recieed an error")});
+       //aise likh skte hai
+meraPromise1.then((value) => {console.log(value)},(error)=>{console.log("recieed an error")});
 
 
 
