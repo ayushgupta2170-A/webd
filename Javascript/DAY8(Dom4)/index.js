@@ -135,14 +135,16 @@ async function utility(){
     
 }
 utility();*/
-
+let name="sher";
 function init(){
     let name="Samsung";
+    
     function displayName(){
         console.log(name);
     }
     displayName();
 }
+init();
 
 
 
