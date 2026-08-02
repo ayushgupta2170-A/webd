@@ -1,4 +1,4 @@
-const countValue=document.querySelector('#counter');
+const countValue=document.querySelector('#counter');//agr # na use kre toh getElementById use kr skte hai instead of querselector
 
 const increment=()=>{
     //get the value from UI
