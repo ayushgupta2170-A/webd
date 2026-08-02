@@ -2,7 +2,7 @@ const countValue=document.querySelector('#counter');//agr # na use kre toh getEl
 
 const increment=()=>{
     //get the value from UI
-    let value=parseInt(countValue.innerText);
+    let value=parseInt(countValue.innerText);//parseInt na use kre toh string ki form mein store hoga
     //update the value
     value=value+1;
     //set thevalue on UI
