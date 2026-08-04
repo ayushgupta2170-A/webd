@@ -30,7 +30,7 @@ function setIndicator(color){
 }
 
 function getRndInteger (min,max ){
-    Math.random() *(max,min);
+    Math.random() *(max-min);
 }
 
 
