@@ -8,8 +8,8 @@ const lowercaseCheck =document.querySelector("[data-lengthSlider]");
 const numbersCheck =document.querySelector("[data-lengthSlider]");
 const symbolCheck =document.querySelector("[data-lengthSlider]");
 const indicator =document.querySelector("[data-lengthSlider]");
-const symbolCheck =document.querySelector("[data-lengthSlider]");
-const symbolCheck =document.querySelector("[data-lengthSlider]");
+const generateBtn =document.querySelector("[data-lengthSlider]");
+const allCheckBox =document.querySelector("[data-lengthSlider]");
 
 
 
