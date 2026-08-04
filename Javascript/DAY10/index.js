@@ -14,7 +14,21 @@ const allCheckBox =document.querySelector("input[type=checkBox]");
 let password="";
 let passwordLength=10;
 let checkCount=1;
+handleSlider();
 //set strength circle color to grey
+
+//set passwordLength
+function handleSlider(){
+    inputSlider.value=passwordLength;
+    lengthDisplay.innerText=passwordLength;
+    //or kuch bhi add krna chahiye
+}
+
+function setIndicator(color){
+    
+}
+
+
 
 
 
