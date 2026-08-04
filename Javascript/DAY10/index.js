@@ -25,7 +25,12 @@ function handleSlider(){
 }
 
 function setIndicator(color){
-    
+    indicator.style.backgroundColor=color;
+        //shadow
+}
+
+function getRndInteger (min,max ){
+    Math.random() *(max,min);
 }
 
 
