@@ -47,8 +47,11 @@ function generateUpperCase(){
 }
 
 function generateSymbols(){
-    return String.fromCharCode(getRndInteger(97,123));
+   const randNum=getRndInteger(0,symbols.length);
+   return symbols.charAt(randNum);
 }
+
+
 
 
 
