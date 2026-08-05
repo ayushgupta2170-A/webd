@@ -9,7 +9,7 @@ const numbersCheck =document.querySelector("#numbers");
 const symbolCheck =document.querySelector("#symbol");
 const indicator =document.querySelector("[data-indicator]");
 const generateBtn =document.querySelector(".generateButton");
-const allCheckBox =document.querySelectorAll("input[type=checkBox]");
+const allCheckBox =document.querySelectorAll("input[type=checkbox]");
 const symbols='~`!@#$%^&*(){}[];:<>?/*';
 
 let password="";
