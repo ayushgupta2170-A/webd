@@ -85,9 +85,11 @@ function calcStrength(){
         copyMsg.innerText="failed";
     }
     //copy vala span visible ho jayega
-    copyMsg.classList.add("active");
-  
-}
+    copyMsg.classList.add("active"); 
+
+    setTimeout(()=>{
+        copyMsg.classList.remove("active");
+    }),2000};
 
 
 
