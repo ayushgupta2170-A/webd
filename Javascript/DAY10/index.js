@@ -84,6 +84,7 @@ async function copyContent(){
     catch(e){
         copyMsg.innerText="failed";
     }
+    
     //copy vala span visible ho jayega
     copyMsg.classList.add("active"); 
 
@@ -91,6 +92,18 @@ async function copyContent(){
         copyMsg.classList.remove("active");
     },2000);
 }
+
+function handleCheckBoxChange(){
+    checkCount=0;
+    allCheckBox.forEach((checkbox)=>{
+        if(checkbox.checked)
+            checkCount++;
+    })
+}
+
+allCheckBox.forEach((checkbox)=>{
+    checkbox.addEventListener('change',handleCheckBoxChange);
+})
 
 inputSlider.addEventListener('input',(e)=>{
     passwordLength=e.target.value;
