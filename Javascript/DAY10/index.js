@@ -171,7 +171,16 @@ generateBtn.addEventListener('click',()=>{
             password+=funcArr[i]();
         }
         //remaining addition
-        
+        for(let i=0;i<passwordLength-funcArr.length;i++){
+            let randIndex=getRndInteger(0,funcArr.length);
+            password+=funcArr[randIndex]();
+        }
+        //shuffle password ,mtlb koi bhi letters aage piche ho skte hai
+        password=shufflePassword();
+        //show in UI
+        passwordDisplay.value=password;
+        //calaculate the strength
+        calcStrength.Strength();
 
 });
 
