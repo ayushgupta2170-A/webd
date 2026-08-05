@@ -6,9 +6,9 @@ const copyMsg =document.querySelector("[data-copyMsg]");
 const uppercaseCheck =document.querySelector("#uppercase");
 const lowercaseCheck =document.querySelector("#lowercase");
 const numbersCheck =document.querySelector("#numbers");
-const symbolCheck =document.querySelector("#symbols");
+const symbolCheck =document.querySelector("#symbol");
 const indicator =document.querySelector("[data-indicator]");
-const generateBtn =document.querySelector(".generateBtn");
+const generateBtn =document.querySelector(".generateButton");
 const allCheckBox =document.querySelectorAll("input[type=checkBox]");
 const symbols='~`!@#$%^&*(){}[];:<>?/*';
 
