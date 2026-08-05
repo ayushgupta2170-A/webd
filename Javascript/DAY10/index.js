@@ -1,5 +1,5 @@
 const inputSlider =document.querySelector("[data-lengthSlider]");
-const length =document.querySelector("[data-lengthNumber]");
+const lengthDisplay =document.querySelector("[data-lengthNumber]");
 const passwordDisplay =document.querySelector("[data-passwordDisplay]");
 const copyBtn =document.querySelector("[data-copy]");
 const copyMsg =document.querySelector("[data-copyMsg]");
