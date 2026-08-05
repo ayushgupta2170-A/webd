@@ -165,7 +165,13 @@ generateBtn.addEventListener('click',()=>{
             funcArr.push(generateRandomNumber);
 
         if(symbolCheck.checked)
-            funcArr.push(generateSymbol);
+            funcArr.push(generateSymbols);
+        //compulsory addition
+        for(let i=0;i<funcArr.length;i++){
+            password+=funcArr[i]();
+        }
+        //remaining addition
+        
 
 });
 
