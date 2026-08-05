@@ -9,12 +9,12 @@ const numbersCheck =document.querySelector("#numbers");
 const symbolCheck =document.querySelector("#symbols");
 const indicator =document.querySelector("[data-indicator]");
 const generateBtn =document.querySelector(".generateBtn");
-const allCheckBox =document.querySelector("input[type=checkBox]");
+const allCheckBox =document.querySelectorAll("input[type=checkBox]");
 const symbols='~`!@#$%^&*(){}[];:<>?/*';
 
 let password="";
 let passwordLength=10;
-let checkCount=1;
+let checkCount=0;
 handleSlider();
 //set strength circle color to grey
 
@@ -61,7 +61,7 @@ function calcStrength(){
     if(numbersCheck.checked)hasNum=true;
     if(symbolCheck.checked)hasSym=true;
 
-    if(hasUpper && hasLower && (hasNum||hasSyn) && passwordLength>=8){
+    if(hasUpper && hasLower && (hasNum||hasSym) && passwordLength>=8){
         setIndicator("#0f0");
     }
     else if(
@@ -93,7 +93,7 @@ async function copyContent(){
     },2000);
 }
 
-function shufflePassword(Array){
+function shufflePassword(array){
     //Fisher Yates Method
     for (let i=array.length-1;i>0;i--){
     // Pick a random index from 0 to i
