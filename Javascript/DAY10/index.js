@@ -102,6 +102,9 @@ copyBtn,addEventListener('click',()=>{
         copyContent();
 })
 
+//generate password vali line ko banan hai
+
+
 
 
 
