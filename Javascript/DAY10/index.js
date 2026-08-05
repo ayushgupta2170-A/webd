@@ -136,6 +136,7 @@ generateBtn.addEventListener('click',()=>{
     password="";
 
     //lets put the stuff mentioned by checkbox
+    /*
     if(uppercaseCheck.checked){
         password+=generateUpperCase();
     }
@@ -150,7 +151,21 @@ generateBtn.addEventListener('click',()=>{
 
     if(symbolsCheck.checked){
         password+=generateSymbol();
-    }
+    }*/
+
+        let funcArr=[];
+
+        if(uppercaseCheck.checked)
+            funcArr.push(generateUpperCase);
+
+        if(lowercaseCheck.checked)
+            funcArr.push(generateLowerCase);
+
+        if(numbersCheck.checked)
+            funcArr.push(generateRandomNumber);
+
+        if(symbolCheck.checked)
+            funcArr.push(generateSymbol);
 
 });
 
