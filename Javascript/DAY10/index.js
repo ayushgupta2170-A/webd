@@ -193,11 +193,11 @@ generateBtn.addEventListener('click',()=>{
             password+=funcArr[randIndex]();
         }
         //shuffle password ,mtlb koi bhi letters aage piche ho skte hai
-        password=shufflePassword(Array.from(password));
+        password=shufflePassword(array.from(password));
         //show in UI
         passwordDisplay.value=password;
         //calaculate the strength
-        calcStrength.Strength();
+        calcStrength();
 
 });
 
