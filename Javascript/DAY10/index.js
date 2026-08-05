@@ -135,6 +135,23 @@ generateBtn.addEventListener('click',()=>{
     //remove old password
     password="";
 
+    //lets put the stuff mentioned by checkbox
+    if(uppercaseCheck.checked){
+        password+=generateUpperCase();
+    }
+
+    if(lowercaseCheck.checked){
+        password+=generateLowerCase();
+    }
+
+    if(numberCheck.checked){
+        password+=generateRandomNumber();
+    }
+
+    if(symbolsCheck.checked){
+        password+=generateSymbol();
+    }
+
 });
 
 
