@@ -10,6 +10,7 @@ const symbolCheck =document.querySelector("#symbols");
 const indicator =document.querySelector("[data-indicator]");
 const generateBtn =document.querySelector(".generateBtn");
 const allCheckBox =document.querySelector("input[type=checkBox]");
+const symbols='~`!@#$%^&*(){}[];:<>?/*';
 
 let password="";
 let passwordLength=10;
@@ -45,7 +46,7 @@ function generateUpperCase(){
     return String.fromCharCode(getRndInteger(65,91));
 }
 
-function generateLowerCase(){
+function generateSymbols(){
     return String.fromCharCode(getRndInteger(97,123));
 }
 
