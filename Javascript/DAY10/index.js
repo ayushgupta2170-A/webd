@@ -76,8 +76,15 @@ function calcStrength(){
     
 }
 
-function copyContent(){
-
+ async function copyContent(){
+    try{
+        await navigator.clipboard.writeText(passwordDisplay.value);
+         copyMsg.innerText="copied";
+    }
+    catch(e){
+        copyMsg.innerText="failed";
+    }
+  
 }
 
 
