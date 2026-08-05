@@ -74,8 +74,10 @@ function calcStrength(){
         setIndicator("#f00");
     }
     
-    
-    
+}
+
+function copyContent(){
+
 }
 
 
