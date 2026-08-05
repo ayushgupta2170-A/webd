@@ -35,7 +35,7 @@ body {
     max-width: 450px;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
 }
 
 h1 {
@@ -88,12 +88,15 @@ h1 {
     transform: translateY(-50%);
 }
 
+/* 💡 Yeh sabse main change hai: input-container ko flex banaya hai */
 .input-container {
     width: 100%;
     background-color: var(--dk-violet);
     border-radius: 1rem;
     padding: 2rem;
     border-bottom: 0.35rem solid var(--lt-violet2);
+    display: flex;
+    flex-direction: column;
 }
 
 .length-container {
@@ -116,8 +119,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.75rem;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .strength-container p {
@@ -219,8 +222,8 @@ h1 {
     cursor: pointer;
     background-color: var(--lt-violet);
     border-radius: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
     background-image: linear-gradient(var(--vb-violet), var(--vb-violet));
     background-repeat: no-repeat;
     border: none;
