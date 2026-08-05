@@ -84,7 +84,7 @@ async function copyContent(){
     catch(e){
         copyMsg.innerText="failed";
     }
-    
+
     //copy vala span visible ho jayega
     copyMsg.classList.add("active"); 
 
@@ -98,7 +98,13 @@ function handleCheckBoxChange(){
     allCheckBox.forEach((checkbox)=>{
         if(checkbox.checked)
             checkCount++;
-    })
+    });
+
+    //special condition
+    if(passwordLength<checkCount){
+        passwordLength=checkCount;
+        handleSlider();
+    }
 }
 
 allCheckBox.forEach((checkbox)=>{
