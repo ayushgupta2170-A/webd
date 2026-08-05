@@ -116,12 +116,26 @@ inputSlider.addEventListener('input',(e)=>{
     handleSlider();
 })
 
-copyBtn,addEventListener('click',()=>{
+copyBtn.addEventListener('click',()=>{
     if(passwordDisplay.value)
         copyContent();
 })
 
 //generate password vali line ko banan hai
+generateBtn.addEventListener('click',()=>{
+     //none of the checkbox selected
+     if(checkCount<=0)return;
+
+     if(passwordLength < checkCount){
+        passwordLength=checkCount;
+        handleSlider();
+    }
+    //lets start the  journey of finder new password
+
+    //remove old password
+    password="";
+
+});
 
 
 
