@@ -40,11 +40,11 @@ body {
 
 h1 {
     color: var(--pl-white);
-    opacity: 0.75;
+    opacity: 0.9;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    line-height: 1.2;
+    font-size: 1.75rem;
 }
 
 .display-container {
@@ -52,7 +52,6 @@ h1 {
     background-color: var(--dk-violet);
     border-radius: 1rem;
     border-bottom: 0.35rem solid var(--lt-violet2);
-    margin: 0.5rem 0;
     padding-top: 0.35rem;
 }
 
@@ -67,6 +66,7 @@ h1 {
     letter-spacing: 1px;
     padding-right: 3.25rem;
     border: none;
+    outline: none;
 }
 
 .display::placeholder {
@@ -104,7 +104,7 @@ h1 {
 
 .length-container p:nth-child(1) {
     color: var(--pl-white);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .length-container p:nth-child(2) {
@@ -122,12 +122,12 @@ h1 {
 
 .strength-container p {
     color: var(--pl-white);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .indicator {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
     border-radius: 50%;
 }
 
@@ -142,7 +142,7 @@ h1 {
     letter-spacing: 1px;
     color: var(--vb-yellow);
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     cursor: pointer;
 }
 
@@ -171,17 +171,18 @@ h1 {
     content: '✔';
     position: absolute;
     color: var(--dk-text);
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     font-weight: 600;
     left: 50%;
-    top: -3.5px;
-    transform: translateX(-50%) translateY(40%);
+    top: -2px;
+    transform: translateX(-50%) translateY(20%);
 }
 
 .check label {
     color: var(--pl-white);
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     letter-spacing: 0.75px;
+    cursor: pointer;
 }
 
 .copyBtn {
@@ -195,7 +196,7 @@ h1 {
     position: absolute;
     background-color: var(--vb-violet2);
     color: var(--vb-yellow);
-    font-size: 1.25rem;
+    font-size: 1rem;
     top: -35px;
     left: -25px;
     padding: 5px 10px;
@@ -218,7 +219,7 @@ h1 {
     cursor: pointer;
     background-color: var(--lt-violet);
     border-radius: 1rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     background-image: linear-gradient(var(--vb-violet), var(--vb-violet));
     background-repeat: no-repeat;
@@ -230,8 +231,8 @@ h1 {
     position: relative;
     z-index: 1;
     appearance: none;
-    height: 2rem;
-    width: 2rem;
+    height: 1.75rem;
+    width: 1.75rem;
     border-radius: 50%;
     background-color: var(--vb-yellow);
     cursor: pointer;
