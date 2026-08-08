@@ -27,7 +27,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(231deg, rgba(22, 6, 40, 1) 0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125, 1) 100%);
+    /*background: linear-gradient(231deg, rgba(22, 6, 40, 1) 0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125, 1) 100%);*/
+    /* https://grabient.com/_gH_gHZgFPgHQgFRgDygMGgMZgK_gHSgIIgp7dW33xcgA */
+
+     background: linear-gradient(90deg, #000004 0.000%, #000c4f 16.667%, #5b8183 33.333%, #e8cd7e 50.000%, #ffb244 66.667%, #9e4700 83.333%, #000000 100.000%);
 }
 
 .container {
