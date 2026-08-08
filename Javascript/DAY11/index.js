@@ -1,6 +1,6 @@
 console.log("hello bhaiya");
 
-const API_KEY="d18456"
+const API_KEY="d1845658f92b31c64bd94f06f7188c9c";
 
 async function showWeather(){
    // let latitude=15.3333;
