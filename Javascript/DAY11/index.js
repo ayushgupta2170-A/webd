@@ -7,3 +7,7 @@ const searchForm=document.querySelector("[]");
 const laodingScreen=document.querySelector(".loading-container");
 const userInfoContainer=document.querySelector(".user-info-container");
 
+//initially variables need??
+let currentTab=userTab;
+const API_KEY="d18456"
+
