@@ -16,10 +16,10 @@
     width:100vw;
     height:100vh;
     color: var(--colorLight2);
-   /* background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);;
-    /* https://grabient.com/_gGZgE0gDMgJQgHHgFVgMigNCgLzgOHgQGgwei84buhgA */
+    /*background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);;
+    /* https://grabient.com/_gH_gHZgFPgHQgFRgDygMGgMZgK_gHSgIIgp7dW33xcgA */
 
-     background: linear-gradient(90deg, #ffffd1 0.000%, #ffe07e 16.667%, #ff531e 33.333%, #730000 50.000%, #000000 66.667%, #002d2f 83.333%, #0bbc91 100.000%);
+background: linear-gradient(90deg, #000004 0.000%, #000c4f 16.667%, #5b8183 33.333%, #e8cd7e 50.000%, #ffb244 66.667%, #9e4700 83.333%, #000000 100.000%);
 }
 
 h1 {
