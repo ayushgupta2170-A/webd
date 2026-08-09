@@ -2,6 +2,13 @@ console.log("hello bhaiya");
 
 const API_KEY="d1845658f92b31c64bd94f06f7188c9c";
 
+function renderWeatherInfo(){
+    let newPara=document.createElement('p');
+    newPara.textContent=`${data?.main?.temp.toFixed(2)} °C`
+
+    document.body.appendChild(newPara);
+}
+
 async function fetchWeatherDetails(){
    try{
     // let latitude=15.3333;
@@ -12,10 +19,7 @@ async function fetchWeatherDetails(){
     const data= await response.json();
     console.log("Weather data:->"+data);
 
-   // let newPara=document.createElement('p');
-    //newPara.textContent=`${data?.main?.temp.toFixed(2)} °C`
-
-    //document.body.appendChild(newPara);
+   
     renderWeatherInfo(data);
    }
    catch(err){
