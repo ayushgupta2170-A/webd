@@ -47,4 +47,25 @@ async function getCustomWeatherDetails(){
 
 function switchTab(clickedTab){
    apiErrorConatiner.classList.remove("active");
+
+   if(clickedTab!=currentTab){
+      currentTab.classList.remove("current-tab");
+      currentTab=clickedTab;
+      currentTab.classList.add("current-tab");
+   
+
+   if(!searchForm.classList.containns("active")){
+      userInfoContainer.classList.remove("active");
+      grantAccessContainer.classList.remove("active");
+      searchForm.classList.add("active");
+   }
+
+   else {
+      searchForm.classList.remove("active");
+      userInfoContainer.classList.remove("active");
+      //getFromSessionsStorage();
+   }
+   //console.log("Current Tab",currentTab);
+  }
+
 }
