@@ -4,6 +4,6 @@ const userContainer=document.querySelector(".weather-container");
 
 const grantAccessContainer=document.querySelector(".grant-location-container");
 const searchForm=document.querySelector("[]");
-const laodingScreen=document.querySelector(".weather-container");
-const userInfoContainer=document.querySelector(".weather-container");
+const laodingScreen=document.querySelector(".loading-container");
+const userInfoContainer=document.querySelector(".user-info-container");
 
