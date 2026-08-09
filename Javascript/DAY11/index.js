@@ -45,3 +45,6 @@ async function getCustomWeatherDetails(){
    }
 }  
 
+function switchTab(clickedTab){
+   apiErrorConatiner.classList.remove("active");
+}
