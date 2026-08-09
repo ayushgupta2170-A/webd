@@ -3,7 +3,7 @@ const searchTab=document.querySelector("[data-searchWeather]");
 const userContainer=document.querySelector(".weather-container");
 
 const grantAccessContainer=document.querySelector(".grant-location-container");
-const searchForm=document.querySelector("[]");
+const searchForm=document.querySelector("[data-searchForm]");
 const laodingScreen=document.querySelector(".loading-container");
 const userInfoContainer=document.querySelector(".user-info-container");
 
