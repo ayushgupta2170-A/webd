@@ -27,11 +27,16 @@ async function fetchWeatherDetails(){
 }
 
 async function getCustomWeatherDetails(){
-    let latitude=15.3333;
+   try{
+      let latitude=15.3333;
     let longitude=64.0833;
 
     let result=await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`);
     let data=await result.json();
 
     console.log(data);
-}
+   }
+   catch(err){
+      console.log("ERROR FOUND",err);
+   }
+}    
