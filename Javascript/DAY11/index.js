@@ -43,4 +43,5 @@ async function getCustomWeatherDetails(){
    catch(err){
       console.log("ERROR FOUND",err);
    }
-}    
+}  
+
