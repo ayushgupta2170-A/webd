@@ -69,3 +69,19 @@ function switchTab(clickedTab){
   }
 
 }
+
+function getLocation(){
+   if(navigator.geolocation){
+      navigator.geolocation.getCurrentPosition(showPosition);
+   }else{
+      console.log("No geolocation support");
+   }
+}
+
+function showPosition(){
+   let lat=position.coords.latitude;
+   let longi=position.coords.longitude;
+
+   console.log(lat);
+   console.log(longi);
+}
