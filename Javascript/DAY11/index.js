@@ -16,8 +16,22 @@ async function fetchWeatherDetails(){
     //newPara.textContent=`${data?.main?.temp.toFixed(2)} °C`
 
     //document.body.appendChild(newPara);
+    renderWeatherInfo(data);
    }
    catch(err){
+      //to handle the error
+
 
    }
+   //https://api.openweathermap.org/data/4.0/onecall/current?lat={lat}&lon={lon}&appid={API key}
+}
+
+async function getCustomWeatherDetails(){
+    let latitude=15.3333;
+    let longitude=74.0833;
+
+    let response=await fetch("https://api.openweathermap.org/data/4.0/onecall/current?lat={lat}&lon={lon}&appid={API key}")
+    let data=await data.json();
+
+    console.log(data);
 }
