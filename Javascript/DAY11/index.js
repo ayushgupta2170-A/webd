@@ -30,7 +30,7 @@ async function getCustomWeatherDetails(){
     let latitude=15.3333;
     let longitude=74.0833;
 
-    let response=await fetch("https://api.openweathermap.org/data/4.0/onecall/current?lat={lat}&lon={lon}&appid={API key}")
+    let result=await fetch("https://api.openweathermap.org/data/4.0/onecall/current?lat={lat}&lon={lon}&appid={API key}")
     let data=await result.json();
 
     console.log(data);
