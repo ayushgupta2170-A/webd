@@ -6,8 +6,8 @@
 }
 
 .wrapper{
-    max-width: 100vw;
-    max-height: 100vh;
+    width: 100vw;
+    height: 100vh;
     /* https://grabient.com/_gH_gHZgFPgHQgFRgDygMGgMZgK_gHSgIIgp7dW33xcgA */
 
     background: linear-gradient(90deg, #000004 0.000%, #000c4f 16.667%, #5b8183 33.333%, #e8cd7e 50.000%, #ffb244 66.667%, #9e4700 83.333%, #000000 100.000%);
