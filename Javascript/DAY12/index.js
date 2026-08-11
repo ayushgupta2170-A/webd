@@ -11,5 +11,10 @@ const winningPositions=[
 ];
 
 //lets create to intialise game
-
-
+function initGame(){
+    currentPlayer="X";
+    gameGrid=["","","","","","","","",""];
+    newGameBtn.classList.remove("active");
+    gameInfo.innerText=`Current Player - ${currentPlayer}`;
+}
+initGame();
