@@ -66,6 +66,15 @@ function checkGameOver(){
         newGameBtn.classList.add("active");
         return;
     }
+
+    //lets check whether there is tie
+    let fillCount=0;
+    gameGrid.forEach((box)=>{
+        if(box!=="")
+            fillCount++;
+    });
+
+    //board
 }
 
 function handleClick(index){
