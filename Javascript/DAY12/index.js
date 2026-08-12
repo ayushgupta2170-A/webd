@@ -19,7 +19,12 @@ function initGame(){
 }
 initGame();
 
-
+function handleClick(index){
+    if(gameGrid[index]==""){
+        boxes[index].innerHTML=currentPlayer;//UI pe kaam krta hai
+        gameGrid[index]==currentPlayer;//gameGrid  pe kaam krta hai
+    }
+}
 
 boxes.forEach((box,index)=>{
     box.addEventListener("click",()=>{
