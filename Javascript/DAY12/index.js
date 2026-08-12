@@ -14,6 +14,11 @@ const winningPositions=[
 function initGame(){
     currentPlayer="X";
     gameGrid=["","","","","","","","",""];
+    //UI pr empty bhi krna pdeg
+    boxes.forEach((box,index)=>{
+        box.innerText="";
+        boxes[index].computedStyleMap.pointerEvents="all";
+    })
     newGameBtn.classList.remove("active");
     gameInfo.innerText=`Current Player - ${currentPlayer}`;
 }
@@ -31,7 +36,7 @@ function swapTurn(){
 }
 
 function gameOver(){
-    return true;
+    newGameBtn.classList.add("active");
 }
 
 function handleClick(index){
