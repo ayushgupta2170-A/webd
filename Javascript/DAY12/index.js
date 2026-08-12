@@ -18,6 +18,8 @@ function initGame(){
     boxes.forEach((box,index)=>{
         box.innerText="";
         boxes[index].computedStyleMap.pointerEvents="all";
+        //green color ko remove krna hai
+        
     })
     newGameBtn.classList.remove("active");
     gameInfo.innerText=`Current Player - ${currentPlayer}`;
