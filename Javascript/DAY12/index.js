@@ -37,7 +37,25 @@ function swapTurn(){
 
 function checkGameOver(){
     let answer="";
-    
+    winningPositions.forEach((position)=>{
+        //all 3 boxes should be non-empty and exactly same in value
+        if((gameGrid[position[0]]!==""||gameGrid[position[1]]!==""||gameGrid[position[2]]!=="")
+            &&(gameGrid[position[0]]==gameGrid[position[1]])&&(gameGrid[position[1]]==gameGrid[position[2]]))
+        {
+
+                //check if X is winner
+                if(gameGrid[position[0]]==="X")
+                    answer="X";
+                elseanswer="0";
+
+                //now we know X/O isnwineer
+                boxes[position[0]].classList.add("win");
+                boxes[position[1]].classList.add("win");
+                boxes[position[2]].classList.add("win");
+
+
+        }
+    });
 }
 
 function handleClick(index){
