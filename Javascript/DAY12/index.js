@@ -48,14 +48,23 @@ function checkGameOver(){
                     answer="X";
                 elseanswer="0";
 
+                //diable pointer evnter
+                boxes.forEach((box)=>{
+                    box.computedStyleMap.pointerEvents="none";
+                })
+
                 //now we know X/O isnwineer
                 boxes[position[0]].classList.add("win");
                 boxes[position[1]].classList.add("win");
                 boxes[position[2]].classList.add("win");
-
-
         }
     });
+
+        //  it menas we have winner
+    if(answer!==""){
+        gameInfo.innerText=` Winner Player -${answer}`;
+        newGameBtn.classList.add("active");
+    }
 }
 
 function handleClick(index){
