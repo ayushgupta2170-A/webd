@@ -30,10 +30,15 @@ function swapTurn(){
     gameInfo.innerText=`current Player-${currentPlayer}`;
 }
 
+function gameOver(){
+    
+}
+
 function handleClick(index){
     if(gameGrid[index]==""){
         boxes[index].innerHTML=currentPlayer;//UI pe kaam krta hai
         gameGrid[index]=currentPlayer;//gameGrid  pe kaam krta hai
+        boxes[index].computedStyleMap.pointerEvents="none";
         //current color
         swapTurn();
         //check koi jeet toh nahi hai
