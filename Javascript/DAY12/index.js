@@ -14,13 +14,16 @@ const winningPositions=[
 function initGame(){
     currentPlayer="X";
     gameGrid=["","","","","","","","",""];
+
     //UI pr empty bhi krna pdeg
     boxes.forEach((box,index)=>{
         box.innerText="";
         boxes[index].computedStyleMap.pointerEvents="all";
-        //green color ko remove krna hai
-        
+        //intialise box with css properties
+        box.classList=`box box$(index+1)`;
+
     })
+    
     newGameBtn.classList.remove("active");
     gameInfo.innerText=`Current Player - ${currentPlayer}`;
 }
