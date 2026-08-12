@@ -35,8 +35,9 @@ function swapTurn(){
     gameInfo.innerText=`current Player-${currentPlayer}`;
 }
 
-function gameOver(){
-    newGameBtn.classList.add("active");
+function checkGameOver(){
+    let answer="";
+    
 }
 
 function handleClick(index){
