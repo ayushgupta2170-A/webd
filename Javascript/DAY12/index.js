@@ -20,10 +20,10 @@ function initGame(){
         box.innerText="";
         boxes[index].computedStyleMap.pointerEvents="all";
         //intialise box with css properties
-        box.classList=`box box$(index+1)`;
+        box.classList=`box box${index+1}`;
 
     })
-    
+
     newGameBtn.classList.remove("active");
     gameInfo.innerText=`Current Player - ${currentPlayer}`;
 }
