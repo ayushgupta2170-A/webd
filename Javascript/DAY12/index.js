@@ -1,4 +1,4 @@
-const boxes=document.querySelector(".box");
+const boxes=document.querySelectorAll(".box");
 const gameInfo=document.querySelector(".game-info");
 const newGamebtn=document.querySelector(".btn");
 
@@ -22,7 +22,11 @@ initGame();
 function handleClick(index){
     if(gameGrid[index]==""){
         boxes[index].innerHTML=currentPlayer;//UI pe kaam krta hai
-        gameGrid[index]==currentPlayer;//gameGrid  pe kaam krta hai
+        gameGrid[index]=currentPlayer;//gameGrid  pe kaam krta hai
+        //current color
+        swapTurn();
+        //check koi jeet toh nahi hai
+        checkGameOver();
     }
 }
 
