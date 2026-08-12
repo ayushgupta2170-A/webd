@@ -74,7 +74,11 @@ function checkGameOver(){
             fillCount++;
     });
 
-    //board
+    //board is filled,game is tie
+    if(fillCount===9){
+        gameInfo.innerText="Game Tied!";
+        newGameBtn.classList.add("active");
+    }
 }
 
 function handleClick(index){
