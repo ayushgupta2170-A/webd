@@ -31,7 +31,7 @@ function swapTurn(){
 }
 
 function gameOver(){
-    
+    return true;
 }
 
 function handleClick(index){
@@ -51,6 +51,8 @@ boxes.forEach((box,index)=>{
         handleClick(index);
     })
 });
+
+newGameBtn.addEventListener("click",initGame);
 
 
 
