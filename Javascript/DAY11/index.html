@@ -100,5 +100,37 @@
 
 
     <script src="index.js"></script>
+
+
+    <!-- ✅ NEW SECTION: India-wide weather data -->
+    <h2>India Cities Weather</h2>
+    <div id="weatherContainer"></div>
+
+    <script src="index.js"></script>
+
+    <!-- ✅ NEW SCRIPT BLOCK -->
+    <script>
+      const API_KEY = "YOUR_API_KEY"; // apni OpenWeatherMap key daalo
+
+      const cities = ["Delhi", "Mumbai", "Kolkata", "Chennai", "Bangalore", "Hyderabad", "Lucknow", "Jaipur", "Pune"];
+      const container = document.getElementById("weatherContainer");
+
+      cities.forEach(city => {
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},in&appid=${API_KEY}&units=metric`)
+          .then(res => res.json())
+          .then(data => {
+            const div = document.createElement("div");
+            div.className = "city";
+            div.innerHTML = `
+              <h3>${data.name}</h3>
+              <p>🌡️ Temp: ${data.main.temp} °C</p>
+              <p>☁️ Weather: ${data.weather[0].description}</p>
+              <p>💨 Wind: ${data.wind.speed} m/s</p>
+            `;
+            container.appendChild(div);
+          })
+          .catch(err => console.error("Error fetching data for", city, err));
+      });
+    </script>
 </body>
 </html>
