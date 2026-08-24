@@ -8,7 +8,7 @@
     margin: 0; /* Bahar ki default khali jagah zero kardi */
     padding: 0; /* Andar ki khali jagah zero kardi */
     box-sizing: border-box; /* Padding/border badhane pe dabbe ka size na faile, sab andar adjust ho jaye */
-    font-family: 'Be Vietnam', sans-serif; /* Likhawat (font) ka style */
+    font-family: 'Times New Roman', Times, serif; /* Likhawat (font) ka style */
     scroll-behavior: smooth; /* Page scroll karne pe makhan ki tarah chale, jhatka na lage */
 }
 
