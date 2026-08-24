@@ -17,6 +17,15 @@ body {
     background-color: rgb(250, 251, 252); /* Peeche ka rang halka safed set kiya */
 }
 
+button div{
+    display:inline-flex;
+    margin:10px;
+    font-size:4rem;
+    border-radius:20%;
+    height:70px;
+    width:100px;
+}
+
 /* Custom cheezein (variables) yahan save karte hain taaki baar baar color code na ratna pade */
 :root {
     --bg0orange: #e31313; /* Apna ek special lal/orange rang ka naam 'bg0orange' rakh diya */
