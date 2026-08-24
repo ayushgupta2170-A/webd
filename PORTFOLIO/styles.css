@@ -20,10 +20,13 @@ body {
 button div{
     display:inline-flex;
     margin:10px;
-    font-size:4rem;
     border-radius:20%;
-    height:70px;
+    height:60px;
     width:100px;
+}
+
+button .contact{
+    font-size: 40px;
 }
 
 /* Custom cheezein (variables) yahan save karte hain taaki baar baar color code na ratna pade */
