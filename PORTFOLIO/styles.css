@@ -19,6 +19,7 @@ body {
 
 button{
    border-radius:10px;
+   padding:5px;
 
 }
 
@@ -83,7 +84,7 @@ a {
 /* hover: Jab kisi cheez pe mouse le jayein toh kya ho */
 .nav-items div:hover {
     transition: 0.8s; /* Badlaav jhatke se nahi, aaram se 0.8 second me ho */
-    font-weight: 300; /* Mouse aane pe text aur mota ho jaye */
+   background-color: azure; /* Mouse aane pe text aur mota ho jaye */
 }
 
 .hero-section {
