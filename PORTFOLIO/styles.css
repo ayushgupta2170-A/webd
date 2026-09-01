@@ -352,14 +352,14 @@ a {
 }
 #project2 {
     background-image: url('.//images/2.png'); 
-    margin-right: 100px; /* Right side se 100px dhakela (Zig-zag design ke liye) */
+    margin-right: 0; /* Right side se 100px dhakela (Zig-zag design ke liye) */
 }
 #project3 {
     background-image: url('.//images/1.png'); 
 }
 #project4 {
     background-image: url('.//images/Project1.png'); 
-    margin-right: 100px;
+    margin-right: 0;
 }
 
 /* Dark filter (Image ke theek upar) */
