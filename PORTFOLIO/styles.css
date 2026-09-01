@@ -646,7 +646,7 @@ a {
     justify-content: center; 
     z-index: 1;
     margin-top: 3rem;
-    margin-left: 0;
+    margin-left: 30%;
     margin-right: 0;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
