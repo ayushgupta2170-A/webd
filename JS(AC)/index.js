@@ -6,4 +6,6 @@ while((guess!=favMovie)&&(guess!="quit")){
 }
 if(guess==favMovie){
     console.log("congrats!!");
+}else{
+    
 }
