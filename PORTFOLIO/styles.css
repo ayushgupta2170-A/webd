@@ -586,16 +586,16 @@ a {
     justify-content: center; 
     align-items: flex-start;
     color: #e31313;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .skill-faded-text {
     position: absolute;
-    font-size: 7em; 
+    font-size: 6em; 
     font-weight: bold;
     color: rgb(225, 225, 225);
     bottom: -15.5%; 
-    right: -15%; /* Shifted to right side as per image */
+    right: -1%; /* Shifted to right side as per image */
     user-select: none;
     z-index: -1;
     transform: rotate(0deg);
