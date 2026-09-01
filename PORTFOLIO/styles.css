@@ -580,9 +580,9 @@ a {
 .skill-container {
     position: relative;
     display: flex;
-    padding: 5rem 0;
+    padding: 3rem 0;
     margin: 8rem auto 5rem auto; 
-    gap: 1rem; 
+    gap: 2rem; 
     justify-content: center; 
     align-items: flex-start;
     color: #e31313;
@@ -602,7 +602,7 @@ a {
 }
 
 .skill-container-left {
-    width: 60%; 
+    width: 50%; 
     display: flex;
     flex-direction: column;
 }
@@ -641,14 +641,14 @@ a {
 .skill-container-right {
     display: grid;
     flex-wrap: wrap; 
-    width: 55%; 
+    width: 50%; 
     gap: 1rem; 
     justify-content: center; 
     z-index: 1;
     margin-top: 2rem;
-    margin-left: 10%;
+    margin-left: 0;
     margin-right: 0;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
 }
 
