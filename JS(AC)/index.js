@@ -1,2 +1,4 @@
 const favMovie="avtar";
-let guess=
+let guess=prompt("guess my favourite movie");
+
+while(guess)
