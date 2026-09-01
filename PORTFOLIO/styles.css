@@ -659,7 +659,7 @@ a {
     width: 90px; 
     transition: all 0.3s;
     object-fit: contain;
-    height: 50px;
+    height: 80px;
 }
 
 .skills-logo:hover {
