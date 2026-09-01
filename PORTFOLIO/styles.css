@@ -95,7 +95,7 @@ a {
     position: relative; /* Ye apni jagah fix rahega, par iske andar absolute wale item bindass ud sakenge */
     justify-content: center; /* Content ko center me laane ke liye */
     align-items: center; 
-    gap: 5rem; /* Left aur right side ke beech mast gap */
+    gap: 2rem; /* Left aur right side ke beech mast gap */
     margin: 4rem auto; 
     padding: 0 1rem;
     padding-bottom: 8rem;
