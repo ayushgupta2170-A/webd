@@ -1,0 +1,1240 @@
+/* Website ki har ek cheez pe ye rule lagega (sabka baap selector) */
+:root{
+    --bg-red:#34c4c;
+    --text-blue:#4a557b;
+    --footer-bg:#435391;
+}
+* {
+    margin: 0; /* Bahar ki default khali jagah zero kardi */
+    padding: 0; /* Andar ki khali jagah zero kardi */
+    box-sizing: border-box; /* Padding/border badhane pe dabbe ka size na faile, sab andar adjust ho jaye */
+    font-family: 'Times New Roman', Times, serif; /* Likhawat (font) ka style */
+    scroll-behavior: smooth; /* Page scroll karne pe makhan ki tarah chale, jhatka na lage */
+}
+
+/* Ye poore webpage ki body hai */
+body {
+    background-color: rgb(250, 251, 252); /* Peeche ka rang halka safed set kiya */
+}
+
+button{
+   border-radius:10px;
+   padding:5px;
+   background-color: white;
+   border:2px solid black;
+
+}
+
+/* Custom cheezein (variables) yahan save karte hain taaki baar baar color code na ratna pade */
+:root {
+    --bg0orange: #e31313; /* Apna ek special lal/orange rang ka naam 'bg0orange' rakh diya */
+}
+
+/* Poori website ko sametne wala dabba */
+#wrapper {
+    height: 100vh; /* Screen ki poori lambai (100% viewport height) lega */
+    overflow-y: auto; /* Lamba content ho toh upar-neeche (vertical) scrollbar aa jaye */
+    overflow-x: hidden; /* Daayen-baayen (horizontal) scrollbar ko hamesha ke liye chhupa diya */
+}
+
+/* Content ko ek fixed width me rakhne wala dabba */
+.container {
+    width: 60%;
+    max-width: 1200px; /* Dabbe ki chaudai fix kardi */
+    margin: 0 auto; /* Dabbe ko screen ke bilkul center me chipkane ki ninja technique */
+}
+
+.navbar {
+    display: flex; /* Sab kuch ek seedhi line me laane ke liye (flexbox ka jadoo) */
+    align-items: center; /* Items ko upar-neeche se barabar center me set karega */
+    justify-content: space-between; /* Items ke beech me barabar doori (space) daal dega */
+    padding-top: 1rem; /* Upar se thodi si padding (khali jagah) chhod di */
+}
+
+.logo-text {
+    font-size: 28px; /* Text kitna bada dikhega */
+    margin-left: -0.9rem; /* Text ko left side khiskane ke liye minus (-) margin diya */
+}
+
+.logo {
+    width: 40px; /* Logo wali photo ka size */
+}
+
+.logo-container {
+    display: flex; /* Items ko row me lagaya */
+    justify-content: baseline; /* Elements ko unke text ki neeche wali line se match karega */
+}
+
+.nav-items {
+    display: flex; /* Menu items ko ek line me laya */
+    cursor: pointer; /* Mouse le jane pe teer (arrow) ki jagah hath (hand) ban jayega */
+    gap: 2rem; /* Menu items ke beech ki spacing (gap) */
+    padding: 0; /* Extra space hata di */
+}
+
+.nav-items div {
+    font-size: 30px; /* Menu ke text ka size */
+    font-weight: 500; /* Text kitna mota (bold) hoga. 400 normal hota hai */
+    cursor: pointer; 
+}
+
+/* Links (anchor tags) ka design */
+a {
+    text-decoration: none; /* Link ke neeche aane wali gandi si underline hata di */
+    color: rgba(0, 0, 0, 0.933); /* Font ka rang dark black rakha */
+}
+
+/* hover: Jab kisi cheez pe mouse le jayein toh kya ho */
+.nav-items div:hover {
+    transition: 0.8s; /* Badlaav jhatke se nahi, aaram se 0.8 second me ho */
+   background-color: azure; /* Mouse aane pe text aur mota ho jaye */
+}
+
+.hero-section {
+    display: flex; 
+    position: relative; /* Ye apni jagah fix rahega, par iske andar absolute wale item bindass ud sakenge */
+    justify-content: center; /* Content ko center me laane ke liye */
+    align-items: center; 
+    gap: 2rem; /* Left aur right side ke beech mast gap */
+    margin: 4rem auto; 
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+}  
+
+.faded-text {
+    user-select: none; /* Koi is text ko copy/select na kar paye */
+    font-size: 5rem; 
+    color: rgb(241, 216, 216); /* Text ka rang halka kiya */
+    position: absolute; /* Normal line-up se bahar nikal ke screen pe kahin bhi set hone ki azaadi */
+    bottom: -10%; /* Neeche ki side se position set ki */
+    left: 2%; /* Left side se position set ki */
+    font-weight: bold;
+    transition: all 3s; 
+    z-index: -1; /* -1 matlab ye baaki sabke peeche chhupega (layers control karne ka remote) */
+    animation: fadeIn 2s ease-in-out; /* 'fadeIn' animation 2 second tak aaram se chalega */
+}  
+
+.hero-section-left {
+    display: flex;
+    flex-direction: column; /* Flex items ko line ki jagah upar-neeche (column) me laga dega */
+    justify-content: center;
+    gap: 2rem;
+    width: 50%; /* Screen ka aada hissa lega */
+}   
+
+.hero-section-heading {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.hero-section-subheading {
+    font-size: 25px; /* Subheading ka text bada kiya */
+}
+
+.role {
+    color: var(--bg0orange); /* Upar jo color variable banaya tha, use yahan bula liya */
+    font-weight: 800; /* Extra mota text */
+}
+
+.hero-section-right {
+    position: relative; /* Andar ke absolute items iske bahar na bhaagein */
+    width: 350px;
+    height: 350px;
+}
+
+.hero-section-description {
+    margin-top: 1rem; /* Upar se bahar ki taraf space */
+    width: 80%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* Button ka design */
+.btn-pink {
+    background-color: var(--bg0orange); /* Background laal/orange */
+    color: rgb(239, 240, 245); /* Text safed jaisa */
+    padding: 0.8rem 2.3rem; /* Andar ki space (Upar-neeche 0.8rem, Daayen-Baayen 2.3rem) */
+    box-shadow: 5px 5px 7px 0px #4d4c4c3f; /* Button ke peeche 3D parchhai (shadow) daali */
+    border-radius: 5px; /* Button ke kinaro (corners) ko thoda gol kiya */
+    font-weight: 500;
+    transition: all 0.5s ease; /* Animation smooth rakhne ke liye */
+    font-size: 18px;
+    cursor: pointer;
+    border: solid 3px transparent; /* Khali border, taaki hover pe button na hile */
+    position: relative; /* ::before wale animation ko iske upar chalane ke liye */
+    z-index: 1; /* Button sabse upar dikhe */
+}
+
+/* ::before ek nakli element banata hai hover animation ke liye */
+.btn-pink::before {
+    content: ""; /* Iske bina ye pseudo-element kaam nahi karta */
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%; /* Poore button pe faila diya */
+    transform: scaleX(0); /* Abhi chaudai zero kardi (dikhega nahi) */
+    border-radius: 5px;
+    background-color: white; /* Hover pe safed parda aayega */
+    border: solid 3px white;
+    z-index: -1; /* Button ke text ke peeche par laal color ke upar */
+    transition: all 0.8s ease; 
+    transform-origin: left; /* Animation left side se shuru hoke khulega */
+}
+
+.btn-pink:hover::before {
+    transform: scaleX(1); /* Mouse laane pe safed parda chaudai me 100% fail jayega */
+}
+
+/* :active matlab jab click karke daba ke rakho */
+.btn-pink:active {
+    border: solid 3px white;
+    outline: 2px solid white; /* Border ke bahar ek aur glow/outline */
+    outline-offset: 2px; /* Button aur outline ke beech halki si jagah */
+    transform: scale(0.95); /* Click karne pe button 5% pichkega (sach me dabne wali feel) */
+}
+
+.btn-pink:hover {
+    color: black; /* Hover pe text kaala ho jaye taaki safed pe dikhe */
+    border: solid 3px white;
+}
+
+.btn-bottom {
+    display: none; /* Element ko page se bilkul gayab kar dega */
+}
+
+.absolute {
+    position: absolute; /* Element parent tag ke hisaab se freely set hoga */
+}
+
+.icons img {
+    width: 70px; 
+    height: auto; /* Height apne aap adjust hogi, image khichegi nahi */
+}
+
+/* ICONS/DOTS KO NAACHNE (ANIMATE) KE LIYE RULES */
+.icon-dot {
+    top: 15%; left: 8%;
+    z-index: 1;
+    animation-name: dotAnimation;
+    animation-duration: 2s; /* Animation 2 second me ek chakkar poora karega */
+    animation-iteration-count: infinite; /* Animation kabhi rukega nahi, hamesha chalega */
+}
+
+/* @keyframes batata hai ki animation ke steps kya honge */
+@keyframes dotAnimation {
+    0% { transform: rotateX(70deg); } /* 3D me X-axis pe thoda ghumaya */
+    50% { transform: rotateX(120deg); } /* Aadha time hone pe zyada ghumaya */
+    100% { transform: rotateX(170deg); } /* Pura time hone pe aur ghumaya */
+}
+
+.icon-dot2 {
+    bottom: -20%; left: 1%; /* Position set kardi */
+    z-index: 8; /* Upar laane ke liye */
+    animation-name: dot2Animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes dot2Animation {
+    0% { transform: translateY(0); } /* Apni original jagah pe rahega */
+    50% { transform: translateY(-20px); } /* Y-axis pe upar ki taraf 20px khiskega */
+    100% { transform: translateY(0); } /* Wapas neeche aayega */
+}
+
+.icon-dot3 {
+    top: 15%; right: -2%; bottom: 80%;
+    animation-name: dot3Animation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes dot3Animation {
+    0% { transform: translateX(0); } 
+    50% { transform: translateX(-20px); } /* X-axis (daayen-baayen) me 20px khiskega */
+    100% { transform: translateX(0); }
+}
+
+/* Baaki dots bhi Y-axis pe upar-neeche hilegi */
+.icon-dot4 {
+    bottom: -20%; left: 5%;
+    animation-name: dot4Animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes dot4Animation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.icon-dot5 {
+    top: 50%; right: -3%;
+    animation-name: dot5Animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes dot5Animation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.icon-dot6 {
+    bottom: 10%; left: 6%;
+    animation-name: dot6Animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes dot6Animation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+/* PROFILE PHOTO KA DESIGN */
+.user-image {
+    padding: 2.5rem;
+    filter: grayscale(1); /* Photo ko B&W (Black and White) kar dega */
+    transition: all 1s;
+    animation: scaleImage 5s linear infinite; /* 5 second me photo choti-badi hogi */
+}
+
+.profile-pic {
+    width: 300px; 
+    height: 400px; 
+    object-fit: cover; /* Photo ka ratio kharab na ho, stretch hoke dabbe me fit aur crop ho jaye */
+    border: 5px solid gray; /* Bahar 5px ka gray border daal diya */
+}
+
+.user-image img {
+    z-index: -9; /* Sabse peeche dhakel diya */
+}
+
+@keyframes scaleImage {
+    0% {
+        transform: scale(1); /* Original size */
+        filter: grayscale(0); /* B&W filter hata diya (0 matlab no filter) */
+    }
+    50% {
+        transform: scale(1);
+        filter: grayscale(0);
+        box-shadow: 3px 3px 10px 0px #e5e0e03f; /* Beech animation me glow/shadow daali */
+    }
+    100% {
+        transform: scale(0.9); /* Photo 10% shrink (choti) ho jayegi */
+        filter: grayscale(0);
+    }
+}
+
+.project-section {
+    background-color: rgb(194, 194, 197); /* Halka gray background */
+    margin-top: 4rem;
+}
+
+.page-header {
+    color: var(--bg0orange);
+    font-size: 90px;
+    text-align: center; /* Text ko line ke center me laane ke liye */
+    padding-top: 30px;
+}
+
+/* PROJECT CARD WALA AREA */
+.project-card {
+    width: 90%;
+    height: 450px;
+    background-size: cover; /* Photo stretch hoke dabbe me perfectly fit ho jaye */
+    position: relative; /* Andar wale tags is card ke hisaab se align honge */
+    box-shadow: 0px 0px 40px #1f1f1f; /* Card ke peeche mast shadow laane ke liye */
+    margin: 0 auto 3rem auto; /* Card center me aaye aur neeche thodi jagah (3rem) chhode */
+    z-index: 1; 
+    overflow: hidden; /* Dabbe ke bahar kuch nikle (jaise overlay) toh usko kaat/chhupa do */
+}
+
+/* Har project card ke liye alag photo set ki */
+#project1 {
+    background-image: url('.//images/Project1.png'); /* Background me image link karna */
+}
+#project2 {
+    background-image: url('.//images/2.png'); 
+    margin-right: 0; /* Right side se 100px dhakela (Zig-zag design ke liye) */
+}
+#project3 {
+    background-image: url('.//images/1.png'); 
+}
+#project4 {
+    background-image: url('.//images/Project1.png'); 
+    margin-right: 0;
+    
+}
+
+/* Dark filter (Image ke theek upar) */
+.project-card::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0); /* '0' matlab abhi filter gayab hai (transparent) */
+    z-index: 1; 
+}
+
+/* Hover aane pe colorful shade */
+.project-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c); /* 3 colours mix karke tircha (45deg) shade banaya */
+    transform: scaleX(0); /* Gradient ki chaudai abhi zero hai */
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index: 2; /* Image aur ::after wale filter ke upar rahega */
+}
+
+.project-card:hover::before {
+    transform: scaleX(1); /* Hover hone pe gradient parda poora fail jayega */
+}
+
+/* Text aur Number ki Setting */
+.project-content, .project-number {
+    position: relative;
+    z-index: 10; /* Ye layers me hamesha top pe rahega (chhupega nahi) */
+    padding: 2rem; 
+    color: white; 
+}
+
+.project-skill-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+    flex-wrap: wrap; /* Jagah kam pade toh next icons apne aap agli line me gir jayein */
+}
+
+.project-skill-container img {
+    width: 30px; 
+    height: 30px; /* Icon ka size chota rakha */
+}
+
+.project-heading {
+    margin: 1rem 0; /* Upar-neeche 1rem ka margin, left-right zero */
+    font-size: 40px;
+}
+
+.btn-grp {
+    display: flex;
+    gap: 1rem;
+    align-items: center; /* Buttons aur icon vertically center me lagenge */
+    margin-top: 2rem;
+}
+
+.icon {
+    font-size: 2rem;
+    color: rgb(195, 191, 191);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.icon:hover {
+    color: var(--bg0orange); /* Hover pe icon laal/orange ho jayega */
+}
+
+/* BADA NUMBER '01', '02' WALI CLASS */
+.project-number {
+    position: absolute;
+    font-size: 200px;
+    font-weight: 600;
+    color: rgb(255, 246, 246);
+    z-index: 10;
+    opacity: 0; /* Opacity 0 matlab cheez poori tarah transparent/gayab kardi */
+}
+
+.project-card:hover .project-number {
+    opacity: 1; /* Hover hone pe wapas poori tarah dikhai dega */
+}
+
+.project-number-right {
+    right: -40px; /* Dabbe se bahar right me nikala */
+    top: -45px; /* Upar ki taraf khiskaya */
+}
+
+.project-number-left {
+    left: -40px; /* Dabbe se bahar left me nikala */
+    top: -45px;
+}
+
+/* Project ke text wala dabba */
+.project-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* Saara text column me ek ke neeche ek aayega */
+    color: white;
+    padding: 2em;
+    gap: 1em; /* Items ke beech me 1em ki spacing */
+    transition: all 0.4s;
+    z-index: 5;
+    bottom: 10%; /* Neeche se 10% upar utha hua */
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 45px; /* Projects ke beech barabar space dene ki ninja technique */
+    margin-top: 50px; 
+    align-items: center; 
+}
+
+.project-content-left {
+    left: 10%; /* Text left side me fix rahega */
+}
+
+.project-content-right {
+    left: 40%; /* Text ko right ki side khiskane ke liye left badhaya */
+}
+
+.project-heading {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem; /* Text lines ke beech ki khali jagah (height) */
+}
+
+.project-subHeading {
+    width: 70%; /* Line poori na faile, sirf 70% width le */
+    font-size: 16px;
+    font-style: italic; /* Text ko tircha (stylish) likhega */
+}
+
+.btn-grp {
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+
+.btn-project:hover {
+    border: none; /* Button hover hone pe border gayab kardi */
+}
+
+.icon {
+    cursor: pointer;
+    color: white;
+    transition: all 0.4s;
+}
+
+.icon:hover {
+    color: var(--bg0orange);
+}
+
+.project-card:hover .project-content {
+    transform: scale(1.1); /* Project hover pe poora content thoda bada (zoom) ho jayega */
+}
+
+.skill-container{
+    position: relative;
+    display :flex;
+    padding : 5rem;
+    margin :10rem auto;
+    gap :30px;
+
+}
+
+.skill-container-left{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-container-right{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    position: relative;
+    gap: 2rem;
+}
+
+.skill-faded-text{
+    position: relative;
+    font-size: 10em;
+    font-style: bold;
+    color: rgb(231,231,231);
+    bottom: 45.5%;
+    right: 5%;
+    user-select: none;
+}
+
+.blob-style{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%);
+    animation: blobAnimate 3s linear infinite;
+}
+
+@keyframes blobAnimate{
+    50%{
+        top:54%;
+        left:46%;
+    }
+}
+
+.skills-logo{
+    width: 90px;
+    transition: all 0.5s;
+}
+
+.skills-logo:hover{
+    transform:scale(1.2);
+}
+
+/* ==================== SKILLS SECTION ==================== */
+.skill-container {
+    position: relative;
+    display: flex;
+    padding: 3rem 0;
+    margin: 6rem auto 5rem auto; 
+    gap: 2rem; 
+    justify-content: center; 
+    align-items: flex-start;
+    color: #e31313;
+    font-size: 2.5rem;
+}
+
+.skill-faded-text {
+    position: absolute;
+    font-size: 4em; 
+    font-weight: bold;
+    color: rgb(225, 225, 225);
+    bottom: -15.5%; 
+    right: -1%; /* Shifted to right side as per image */
+    left: 30%;
+    user-select: none;
+    z-index: -1;
+    transform: rotate(0deg);
+}
+
+.skill-container-left {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-heading {
+    font-size: 3rem; 
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    color: #dd2626;
+    width: 100%; 
+}
+
+.big-m {
+    font-size: 4rem;
+    color: var(--bg-red);
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    margin-right: -15px;
+}
+
+.txt-red{
+    color: var(--bg-red);
+}
+
+.skill-subHeading {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    width: 100%;
+     
+}
+
+.skill-container-right {
+    display: grid;
+    flex-wrap: wrap; 
+    width: 50%; 
+    gap: 3rem; 
+    justify-content: center; 
+    z-index: 1;
+    margin-top: 8rem;
+    margin-left: 20%;
+    margin-right: 0;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+
+.skills-logo {
+    width: 80px; 
+    transition: all 0.3s;
+    object-fit: contain;
+    height: 60px;
+}
+
+.skills-logo:hover {
+    transform: scale(1.1); 
+}
+
+/* ==================== CONTACT SECTION ==================== */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.contact-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--bg0orange); 
+    margin-bottom: 0.5rem;
+}
+
+.contact-subheading {
+    font-size: 2rem;
+    color: #444; 
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 70%; 
+    max-width: 800px;
+    gap: 1.2rem;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #dcdcdc; 
+    outline: none;
+}
+
+.form-input::placeholder, .form-textarea::placeholder {
+    color: #666;
+}
+
+.form-textarea {
+    resize: none; 
+    height: 200px; 
+}
+
+.btn-submit {
+    background-color: #e31313;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    transform: scale(0.95);
+    background-color: #c93b3b;
+}
+
+/* ==================== FOOTER SECTION ==================== */
+.footer {
+    background-color: var(--footer-bg);
+    padding: 3rem 0;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.4); /* Faded look as per image */
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--bg-red);
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icon-social {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon-social:hover {
+    color: var(--bg-red);
+}
+
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    .container {
+        width: 90%;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    .nav-items {
+        gap: 1rem;
+    }
+
+    .nav-items div {
+        font-size: 20px;
+    }
+
+    .logo-text {
+        font-size: 24px;
+    }
+
+    .logo {
+        width: 35px;
+    }
+
+    /* HERO */
+    .hero-section {
+        gap: 1rem;
+        margin: 3rem auto;
+        padding-bottom: 5rem;
+    }
+
+    .hero-section-left {
+        width: 50%;
+    }
+
+    .hero-section-heading {
+        font-size: 2.2rem;
+    }
+
+    .hero-section-subheading {
+        font-size: 20px;
+    }
+
+    .hero-section-description {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .hero-section-right {
+        width: 300px;
+        height: 350px;
+    }
+
+    .profile-pic {
+        width: 250px;
+        height: 350px;
+    }
+
+    /* PROJECT */
+    .page-header {
+        font-size: 65px;
+    }
+
+    .project-card {
+        width: 95%;
+        height: 400px;
+    }
+
+    .project-heading {
+        font-size: 40px;
+    }
+
+    .project-subHeading {
+        width: 80%;
+    }
+
+    /* SKILLS */
+    .skill-container {
+        width: 90%;
+        padding: 3rem 0;
+        gap: 2rem;
+    }
+
+    .skill-container-left {
+        width: 50%;
+    }
+
+    .skill-container-right {
+        width: 50%;
+        margin-left: 0;
+        margin-top: 5rem;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill-heading {
+        font-size: 2.5rem;
+    }
+
+    .skill-subHeading {
+        font-size: 1rem;
+    }
+
+    .skills-logo {
+        width: 65px;
+    }
+
+    /* CONTACT */
+    .contact-form {
+        width: 85%;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        width: 90%;
+    }
+
+    .footer-links {
+        gap: 1rem;
+    }
+}
+
+
+/* ==================== MOBILE ==================== */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .logo-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-text {
+        font-size: 24px;
+        margin-left: 0;
+    }
+
+    .logo {
+        width: 32px;
+    }
+
+    .nav-items {
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .nav-items div {
+        font-size: 17px;
+    }
+
+    /* HERO */
+    .hero-section {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        margin: 3rem auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .hero-section-left {
+        width: 100%;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    .hero-section-heading {
+        font-size: 2rem;
+    }
+
+    .hero-section-subheading {
+        font-size: 18px;
+    }
+
+    .hero-section-description {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .hero-section-right {
+        width: 280px;
+        height: 330px;
+    }
+
+    .profile-pic {
+        width: 230px;
+        height: 300px;
+    }
+
+    .user-image {
+        padding: 1rem;
+    }
+
+    .icons img {
+        width: 45px;
+    }
+
+    .faded-text {
+        font-size: 3rem;
+        bottom: -5%;
+    }
+
+    /* PROJECT */
+    .project-section {
+        margin-top: 2rem;
+    }
+
+    .page-header {
+        font-size: 45px;
+        padding-top: 25px;
+    }
+
+    .project-container {
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .project-card {
+        width: 95%;
+        height: 350px;
+    }
+
+    .project-content {
+        padding: 1rem;
+        bottom: 5%;
+        left: 5% !important;
+        right: 5%;
+    }
+
+    .project-heading {
+        font-size: 30px;
+        line-height: 2rem;
+    }
+
+    .project-subHeading {
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .project-number {
+        font-size: 100px;
+    }
+
+    .project-number-right {
+        right: -20px;
+        top: -25px;
+    }
+
+    .project-number-left {
+        left: -20px;
+        top: -25px;
+    }
+
+    .project-skill-container {
+        gap: 6px;
+    }
+
+    .project-skill-container img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .btn-grp {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    /* ==================== SKILLS ==================== */
+
+    .skill-container {
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+        margin: 4rem auto;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .skill-container-left {
+        width: 100%;
+    }
+
+    .skill-heading {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    .skill-subHeading {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.6;
+        gap: 1rem;
+    }
+
+    .skill-container-right {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        justify-items: center;
+    }
+
+    .skills-logo {
+        width: 55px;
+        height: 50px;
+    }
+
+    .skill-faded-text {
+        font-size: 3.5rem;
+        bottom: -5%;
+        left: 0;
+        right: auto;
+    }
+
+    /* CONTACT */
+    .contact-section {
+        padding: 4rem 0;
+    }
+
+    .contact-heading {
+        font-size: 2.2rem;
+    }
+
+    .contact-subheading {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-form {
+        width: 92%;
+    }
+
+    .form-input,
+    .form-textarea {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .form-textarea {
+        height: 150px;
+    }
+
+    .btn-submit {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .footer-container {
+        width: 92%;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-socials {
+        gap: 1rem;
+    }
+}
+
+
+/* VERY SMALL MOBILE */
+@media (max-width: 400px) {
+
+    .nav-items div {
+        font-size: 15px;
+    }
+
+    .hero-section-heading {
+        font-size: 1.7rem;
+    }
+
+    .hero-section-subheading {
+        font-size: 16px;
+    }
+
+    .hero-section-right {
+        width: 240px;
+        height: 300px;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 270px;
+    }
+
+    .page-header {
+        font-size: 38px;
+    }
+
+    .project-card {
+        height: 320px;
+    }
+
+    .project-heading {
+        font-size: 25px;
+    }
+
+    .skill-heading {
+        font-size: 1.8rem;
+    }
+
+    .skill-container-right {
+        gap: 1rem;
+    }
+
+    .skills-logo {
+        width: 45px;
+        height: 45px;
+    }
+}
