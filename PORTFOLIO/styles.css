@@ -603,7 +603,7 @@ a {
 }
 
 .skill-container-left {
-    width: 50%; 
+    width: 60%; 
     display: flex;
     flex-direction: column;
 }
@@ -614,6 +614,7 @@ a {
     line-height: 1.4;
     margin-bottom: 1.5rem;
     color: #dd2626;
+    width: 100%; 
 }
 
 .big-m {
@@ -644,7 +645,7 @@ a {
 .skill-container-right {
     display: grid;
     flex-wrap: wrap; 
-    width: 60%; 
+    width: 55%; 
     gap: 3rem; 
     justify-content: center; 
     z-index: 1;
