@@ -596,7 +596,7 @@ a {
     font-weight: bold;
     color: rgb(225, 225, 225);
     bottom: -15.5%; 
-    right: -1%; /* Shifted to right side as per image */
+    right: -12%; /* Shifted to right side as per image */
     user-select: none;
     z-index: -1;
     transform: rotate(0deg);
