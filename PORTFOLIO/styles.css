@@ -646,12 +646,12 @@ a {
 .skill-container-right {
     display: grid;
     flex-wrap: wrap; 
-    width: 55%; 
+    width: 50%; 
     gap: 3rem; 
     justify-content: center; 
     z-index: 1;
     margin-top: 8rem;
-    margin-left: 60%;
+    margin-left: 0;
     margin-right: 0;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
