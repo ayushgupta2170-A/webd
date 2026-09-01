@@ -592,11 +592,12 @@ a {
 
 .skill-faded-text {
     position: absolute;
-    font-size: 6em; 
+    font-size: 5em; 
     font-weight: bold;
     color: rgb(225, 225, 225);
     bottom: -15.5%; 
-    right: -12%; /* Shifted to right side as per image */
+    right: -1%; /* Shifted to right side as per image */
+    left: 30%;
     user-select: none;
     z-index: -1;
     transform: rotate(0deg);
