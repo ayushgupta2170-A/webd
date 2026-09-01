@@ -39,7 +39,7 @@ button{
 
 /* Content ko ek fixed width me rakhne wala dabba */
 .container {
-    width: 90%;
+    width: 70%;
     max-width: 1200px; /* Dabbe ki chaudai fix kardi */
     margin: 0 auto; /* Dabbe ko screen ke bilkul center me chipkane ki ninja technique */
 }
