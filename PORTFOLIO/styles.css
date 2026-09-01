@@ -409,6 +409,7 @@ a {
 
 .project-heading {
     margin: 1rem 0; /* Upar-neeche 1rem ka margin, left-right zero */
+    font-size: 40px;
 }
 
 .btn-grp {
