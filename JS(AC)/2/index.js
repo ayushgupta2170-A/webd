@@ -12,7 +12,13 @@ while(true){
         for(let i=0;i<todo.length;i++){
             console.log(i,todo[i]);
         }
+        console.log("__________");
+    }else if(req=="add"){
+        let task=prompt("please enter whatever u want to add");
+        todo.push(task);
+        console.log("task added");
     }
+    
 }
 
 console.log(req);
