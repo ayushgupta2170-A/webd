@@ -43,7 +43,7 @@ function getSum(n){
 let str=["hi","hello","guys"];
 function concat(str){
     let res="";
-    for(let i=0;i<=str.length;i++){
+    for(let i=0;i<str.length;i++){
         res+=str[i];
     }
     return res;
