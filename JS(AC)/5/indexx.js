@@ -12,7 +12,7 @@ while(true){
     }
     if(guess==random){
 
-         let right=console.log("congratulations!!.....u guessed right!!");
+         let right=prompt("congratulations!!.....u guessed right!!");
         break;
     }else{
         guess=prompt("please try again");
