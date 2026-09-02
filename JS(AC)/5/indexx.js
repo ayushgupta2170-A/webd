@@ -13,7 +13,7 @@ while(true){
     if(guess==random){
 
          let right=prompt("congratulations!!.....u guessed right!!");
-         console.log("welcome");
+         console.log(right);
         break;
     }else{
         guess=prompt("please try again");
