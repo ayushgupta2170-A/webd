@@ -8,3 +8,9 @@ rollDice();
 rollDice();
 rollDice();
 rollDice();
+
+function table(n){
+    for(let i=n;i<n*10;i=i+=n){
+        console.log(i);
+    }
+}
