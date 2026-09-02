@@ -40,11 +40,11 @@ function getSum(n){
     return sum;
 }
 
-
-function getSum(n){
-    let sum=0;
-    for(let i=0;i<=n;i++){
-        sum+=i;
+let str=['hi','hello','guys'];
+function concat(str){
+    let res=" ";
+    for(let i=0;i<=str.length;i++){
+        res+=str[i];
     }
-    return sum;
+    return res;
 }
