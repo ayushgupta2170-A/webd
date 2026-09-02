@@ -12,8 +12,8 @@ while(true){
     }
     if(guess==random){
 
-         let right=prompt("congratulations!!.....u guessed right!!");
-         console.log(right);
+         let right=prompt("congratulations!!.....u guessed right!!\n Amazing guess!😊");
+         
         break;
     }else{
         guess=prompt("please try again");
