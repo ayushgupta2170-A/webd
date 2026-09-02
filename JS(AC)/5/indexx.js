@@ -12,7 +12,7 @@ while(true){
     }
     if(guess==random){
 
-         let right=prompt("congratulations!!.....u guessed right!!\n Amazing guess!😊");
+         let right=alert("congratulations!!.....u guessed right!!\n Amazing guess!😊");
          
         break;
     }else{
