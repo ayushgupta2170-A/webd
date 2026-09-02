@@ -21,3 +21,12 @@ function sum(a,b){
 }
 console.log(sum(5,7));
 console.log(sum(sum(5,7),7));
+
+function isAdult(age){
+    if(age>=18){
+        return "adult";
+    }
+    else{
+        return "not adult";
+    }
+}
