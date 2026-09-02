@@ -14,3 +14,4 @@ function table(n){
         console.log(i);
     }
 }
+table(45);
