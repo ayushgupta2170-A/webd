@@ -15,7 +15,12 @@ while(true){
          let right=alert("congratulations!!.....u guessed right!!\n Amazing guess!😊");
          
         break;
-    }else{
-        guess=prompt("please try again");
+    }
+    //using hint
+    if(guess<random){
+        guess=prompt("your guess is small..please try again");
+    }
+    else{
+        guess=prompt("your guess is large....please try again");
     }
 }
