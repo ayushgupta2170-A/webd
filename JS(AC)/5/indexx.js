@@ -18,9 +18,9 @@ while(true){
     }
     //using hint
     if(guess<random){
-        guess=prompt("your guess is small..please try again");
+        guess=prompt("hint:your guess is small..please try again");
     }
     else{
-        guess=prompt("your guess is large....please try again");
+        guess=prompt("hint:your guess is large....please try again");
     }
 }
