@@ -15,6 +15,7 @@ function oddEvenTest(request) {
 
 
 const calculator = {
+    num:55,
     add: function(a, b) {
         return a + b;
     },
