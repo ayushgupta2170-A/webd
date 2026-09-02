@@ -40,7 +40,7 @@ function getSum(n){
     return sum;
 }
 
-let str=['hi','hello','guys'];
+let str=["hi","hello","guys"];
 function concat(str){
     let res=" ";
     for(let i=0;i<=str.length;i++){
