@@ -5,9 +5,7 @@ console.log(random);
 let guess=prompt("guess the no");
 
 while(true){
-    if(guess=!random){
-        guess=prompt("please try again");
-    }
+    
     if(guess=="quit"){
         console.log("user quit");
         break;
@@ -15,5 +13,7 @@ while(true){
     if(guess==random){
         console.log("congratulations!!.....u guessed right!!");
         break;
+    }else{
+        guess=prompt("please try again");
     }
 }
