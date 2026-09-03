@@ -47,4 +47,10 @@ let arrr=[
 
 
     //some
+    let ans4=arr.some((value)=>{
+        return value%2==0;
+    });
+    console.log(ans4);
+
+    //reduce
     
