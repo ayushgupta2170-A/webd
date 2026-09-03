@@ -7,3 +7,21 @@ arr.forEach(function(el){
 //    console.log(el);
 //};
 //arr.forEach(print);
+
+let arrr=[
+    {
+        name:"ayush",
+        marks:95,
+    },
+    {
+        name:"aush",
+        marks:96,
+    },
+    {
+        name:"arush",
+        marks:98,
+    }];
+
+    arrr.forEach((student)=>{
+        console.log(student.marks);
+    });
