@@ -85,9 +85,14 @@ const add=(a,b)=>a+b;
 
 //settimeout
 console.log("hi");
-setTimeout(()=>{
+
+//setTimeout(()=>{
+//    console.log("ayush");
+//},18000);
+
+setInterval(()=>{
     console.log("ayush");
-},18000);
+},8000);
 console.log("ram");
 
 
