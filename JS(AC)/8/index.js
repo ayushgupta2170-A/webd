@@ -141,7 +141,7 @@ let arrr=[
         password:"123@ayush",
     };
     //ek ek ko define krne acha destructuring kro
-    let{username:user,password}=student;
+    let{username:user,password,secret,city="hardoi"}=student;
     
     
    
