@@ -86,13 +86,16 @@ let arrr=[
 
     //find min no in array
     let num1=[10,2,5,0,4];
-    let min=num1.min((min,el)=>{
+    function getMin(num1){
+        let min=num1.reduce((min,el)=>{
         if(min<el){
             return min;
         }else{
             return el;
         }
     });
-    console.log(min);
+    return min;
+    }
+   
 
     
