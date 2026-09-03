@@ -116,6 +116,15 @@ let arrr=[
         password:"abcd123",
     };
     const dataCopy={...data,id:123456,class:"naagin"};
+
+
+    //rest
+    function sum1(...arg){
+        //arguments
+        for(let i=0;i<arguments.length;i++){
+            console.log("you gave us:",args[i]);
+        }
+    }
     
     
    
