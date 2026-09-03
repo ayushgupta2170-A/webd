@@ -71,5 +71,8 @@ console.log("hello6");
 const sum=(a,b)=>{
     console.log(a+b);
 };
+const cube=(a)=>{
+    return a*a*a;
+};
 
 
