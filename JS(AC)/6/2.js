@@ -90,10 +90,17 @@ console.log("hi");
 //    console.log("ayush");
 //},18000);
 
-setInterval(()=>{
+let id1=setInterval(()=>{
     console.log("ayush");
+},6000);
+console.log(id1);
+
+let id2=setInterval(()=>{
+    console.log("Ayush");
 },8000);
-console.log("ram");
+console.log(id2);
+
+
 
 
 
