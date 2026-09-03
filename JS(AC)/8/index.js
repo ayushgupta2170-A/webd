@@ -79,6 +79,9 @@ let arrr=[
     });
 
 
-    //mult
+    //multiples of 10 or not
+    let nums=[10,20,30,40];
+    let res=nums.every((el)=>el%10==0);
+    console.log(res);
 
     
