@@ -1,3 +1,4 @@
+/*
 function oddEvenTest(request) {
     if(request == "odd") {
         return function(n) {
@@ -10,10 +11,10 @@ function oddEvenTest(request) {
     } else {
         console.log("wrong request");
     }
-}
+}*/
 
 
-
+/*
 const calculator = {
     num:55,
     add: function(a, b) {
@@ -26,3 +27,21 @@ const calculator = {
         return a * b;
     }
 };
+*/
+
+const student={
+    name:"ayush",
+    age:19,
+    eng:95,
+    maths:94,
+    hindi:89,
+    getAvg(){
+        console.log(this);
+        let avg=(this.eng+this.maths+this.hindi)/3;
+        console.log(`${this.name}got avg marks${avg}`);
+    }
+}
+function getAvg(){
+    console.log(this);
+}
+
