@@ -109,6 +109,12 @@ let arrr=[
     //spread 
     let seed=[..."ayushgupta"];
     console.log(seed);
+
+    //spread with object literal
+    const data={
+        email:"ironman@gmail.com",
+        password:"abcd123",
+    };
     
     
    
