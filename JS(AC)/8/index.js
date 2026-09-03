@@ -41,7 +41,9 @@ let arrr=[
 
     //every
     let ans3=arr.every((value)=>{
-        return value*2==0;
+        return value%2==0;
     });
     console.log(ans3);
+
+    
     
