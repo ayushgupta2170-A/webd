@@ -79,6 +79,7 @@ const name=()=>{
 };
 //implicit return
 const mul=(a,b)=>a*b; 
+const add=(a,b)=>a+b;
 
 
 
