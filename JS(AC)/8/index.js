@@ -45,5 +45,6 @@ let arrr=[
     });
     console.log(ans3);
 
-    
+
+    //some
     
