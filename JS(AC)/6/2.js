@@ -132,7 +132,7 @@ const student={
     hindi:89,
     prop:this,//global scope
     getName:function(){//normal fx
-        console.log(this);//student
+        console.log(this);
         return this.name;
     },
 
