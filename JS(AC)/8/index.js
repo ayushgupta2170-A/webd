@@ -122,7 +122,7 @@ let arrr=[
     function sum1(...arg){
         //arguments
         for(let i=0;i<arg.length;i++){
-            console.log("you gave us:",args[i]);
+            console.log("you gave us:",arg[i]);
         }
     }
     
