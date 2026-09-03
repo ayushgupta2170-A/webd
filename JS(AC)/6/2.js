@@ -74,5 +74,9 @@ const sum=(a,b)=>{
 const cube=a=>{//agr single arg hai toh bracket lgao ya na lgao()
     return a*a*a;
 };
+const name=()=>{
+    console.log("hello");
+};
+
 
 
