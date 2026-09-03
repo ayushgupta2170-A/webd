@@ -142,7 +142,7 @@ let arrr=[
         city:"pune",
     };
     //ek ek ko define krne acha destructuring kro
-    let{username:user,password,secret,bill="123ayush",city="hardoi"}=student;
+    let{username:user,password,secret,bill="123ayush",place="hardoi"}=student;
     
     
    
