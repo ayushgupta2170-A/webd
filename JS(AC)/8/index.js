@@ -125,6 +125,8 @@ let arrr=[
             console.log("you gave us:",arg[i]);// output----sum1(1,2,34,56);
         }
     }
+
+    
     
     
    
