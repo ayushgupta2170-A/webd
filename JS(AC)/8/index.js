@@ -115,7 +115,7 @@ let arrr=[
         email:"ironman@gmail.com",
         password:"abcd123",
     };
-    const dataCopy={...data,id:123456,class:naagin};
+    const dataCopy={...data,id:123456,class:"naagin"};
     
     
    
