@@ -126,7 +126,10 @@ let arrr=[
         }
     }
 
-    
+    function sim(...arg){
+        return arg.reduce((sim,el)=>sim+el);
+    }
+    console.log(sim(1,2,3,4));
     
     
    
