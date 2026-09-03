@@ -55,7 +55,12 @@ function getAvg(){
      //try and catch
 console.log("hello");
 console.log("hello2");
-console.log(a);
+try{
+    console.log(a);
+}catch{
+    console.log("caught error");
+}
+
 console.log("hello4");
 console.log("hello6");
 
