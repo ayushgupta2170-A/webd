@@ -131,6 +131,15 @@ const student={
     maths:94,
     hindi:89,
     prop:this,//global scope
+    getName:function(){
+        console.log(this);
+        return this.name;
+    },
+
+    getMarks:()=>{
+        console.log(this);
+        return this.age;
+    },
 };
 
 
