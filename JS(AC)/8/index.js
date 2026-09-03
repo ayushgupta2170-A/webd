@@ -85,6 +85,13 @@ let arrr=[
     console.log(res);
 
     //find min no in array
-    
+    let num=[10,2,5,0,4];
+    let min=num.min((min,el)=>{
+        if(min<el){
+            return min;
+        }else{
+            return el;
+        }
+    })
 
     
