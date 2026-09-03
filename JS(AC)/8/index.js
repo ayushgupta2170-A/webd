@@ -38,4 +38,6 @@ let arrr=[
         return value>2;
     });
     console.log(ans1);
+
+    //every
     
