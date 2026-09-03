@@ -83,7 +83,9 @@ const mul=(a,b)=>a*b;
 const add=(a,b)=>a+b;
 */
 
-//settimeout
+
+/*
+//settimeout & setInterval
 console.log("hi");
 
 //setTimeout(()=>{
@@ -99,6 +101,7 @@ let id2=setInterval(()=>{
     console.log("Ayush");
 },8000);
 console.log(id2);
+*/
 
 
 
