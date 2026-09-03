@@ -98,7 +98,7 @@ let arrr=[
     }
 
     //Default parameters
-    let func=function sum(a,b=2){
+    function sum(a,b=2){
         return a+b;
     }
     
