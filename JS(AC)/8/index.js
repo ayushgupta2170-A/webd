@@ -130,6 +130,18 @@ let arrr=[
         return arg.reduce((sim,el)=>sim+el);
     }
     console.log(sim("hello",1,2,3,4));
+
+
+    //destructuring with objetcs
+    const student={
+        name:"ayush",
+        age:19,
+        class:"first",
+        username:"ayush123",
+        password:"123@ayush",
+    };
+    //ek ek ko define krne acha destructuring kro
+    let{username:user,password}=student;
     
     
    
