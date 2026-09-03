@@ -25,3 +25,12 @@ let arrr=[
     arrr.forEach((student)=>{
         console.log(student.marks);
     });
+
+
+           //map
+    let ans=arr.map((value)=>{
+        return value*2;
+    });
+    console.log(ans);
+
+    //filter
