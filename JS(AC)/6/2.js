@@ -148,6 +148,9 @@ console.log(id2);
 const square=n=>n*n;
 console.log(square(5));
 
+//Ques... Write a function that prints "hello word" 5 times at interval of 2s each
+
+
 
 
 
