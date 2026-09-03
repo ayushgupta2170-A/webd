@@ -107,7 +107,7 @@ let arrr=[
     }
 
     //spread 
-    let seed="ayushgupta";
+    let seed=["ayushgupta"];
     console.log(...seed);
     
     
