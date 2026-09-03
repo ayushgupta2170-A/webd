@@ -62,11 +62,20 @@ let arrr=[
 
     // Find maximum in an array
     let val=[1,2,3,4,5,6,8,9,7];
-    let max=-1;
+   /* let max=-1;
     for(let i=0;i<val.length;i++){
-        if(max<arr[i]){
-            max=arr[i];
+        if(max<val[i]){
+            max=val[i];
         }
     }console.log(max);
+    */
+
+    let max=val.reduce((max,bl)=>{
+         if(max<bl){
+            return bl;
+        }else{
+            return max;
+        }
+    });
 
     
