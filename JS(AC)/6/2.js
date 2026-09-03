@@ -67,6 +67,7 @@ console.log("hello6");
 */
 
 
+/*
 //....arrow fx
 const sum=(a,b)=>{
     console.log(a+b);
@@ -80,7 +81,14 @@ const name=()=>{
 //implicit return
 const mul=(a,b)=>a*b; 
 const add=(a,b)=>a+b;
+*/
 
+//settimeout
+console.log("hi");
+setTimeout(()=>{
+    console.log("ayush");
+},18000);
+console.log("ram");
 
 
 
