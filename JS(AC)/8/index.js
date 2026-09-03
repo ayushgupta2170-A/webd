@@ -40,4 +40,8 @@ let arrr=[
     console.log(ans1);
 
     //every
+    let ans3=arr.every((value)=>{
+        return value*2==0;
+    });
+    console.log(ans3);
     
