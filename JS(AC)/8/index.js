@@ -34,4 +34,8 @@ let arrr=[
     console.log(ans);
 
     //filter
+    let ans1=arr.filter((value)=>{
+        return value>2;
+    });
+    console.log(ans1);
     
