@@ -155,6 +155,7 @@ let id1=setTimeout(()=>{
 
 setInterval(() => {
     clearInterval(id1);
+    console.log("clear interval");
 }, 10000);
 
 
