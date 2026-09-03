@@ -51,7 +51,7 @@ function getAvg(){
 
 
 
-
+/*
      //try and catch
 console.log("hello");
 console.log("hello2");
@@ -64,6 +64,12 @@ try{
 
 console.log("hello4");
 console.log("hello6");
+*/
 
+
+//....arrow fx
+const sum=(a,b)=>{
+    console.log(a+b);
+};
 
 
