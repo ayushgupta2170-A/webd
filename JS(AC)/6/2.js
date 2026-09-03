@@ -14,6 +14,8 @@ function oddEvenTest(request) {
 }*/
 
 
+
+
 /*
 const calculator = {
     num:55,
@@ -28,6 +30,9 @@ const calculator = {
     }
 };
 */
+
+
+
 
 
 /*
@@ -51,6 +56,10 @@ function getAvg(){
 
 
 
+
+
+
+
 /*
      //try and catch
 console.log("hello");
@@ -65,6 +74,11 @@ try{
 console.log("hello4");
 console.log("hello6");
 */
+
+
+
+
+
 
 
 /*
@@ -82,6 +96,10 @@ const name=()=>{
 const mul=(a,b)=>a*b; 
 const add=(a,b)=>a+b;
 */
+
+
+
+
 
 
 /*
@@ -102,6 +120,20 @@ let id2=setInterval(()=>{
 },8000);
 console.log(id2);
 */
+
+
+
+//this with arrow fx
+const student={
+    name:"ayush",
+    age:19,
+    eng:95,
+    maths:94,
+    hindi:89,
+    prop:this,//global scope
+};
+
+
 
 
 
