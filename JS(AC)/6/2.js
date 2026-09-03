@@ -77,6 +77,8 @@ const cube=a=>{//agr single arg hai toh bracket lgao ya na lgao()
 const name=()=>{
     console.log("hello");
 };
+//implicit return
+
 
 
 
