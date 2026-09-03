@@ -121,7 +121,7 @@ let arrr=[
     //rest
     function sum1(...arg){
         //arguments
-        for(let i=0;i<arguments.length;i++){
+        for(let i=0;i<arg.length;i++){
             console.log("you gave us:",args[i]);
         }
     }
