@@ -53,4 +53,7 @@ let arrr=[
     console.log(ans4);
 
     //reduce
-    
+    let ans5=arr.reduce((value)=>{
+        return total+value;
+    });
+    console.log(ans5);
