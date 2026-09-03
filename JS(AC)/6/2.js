@@ -131,12 +131,12 @@ const student={
     maths:94,
     hindi:89,
     prop:this,//global scope
-    getName:function(){
+    getName:function(){//normal fx
         console.log(this);
         return this.name;
     },
 
-    getMarks:()=>{
+    getMarks:()=>{//arrow fx
         console.log(this);//parent scope->window
         return this.age;
     },
