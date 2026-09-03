@@ -58,3 +58,7 @@ let arrr=[
         return total+value;
     });
     console.log(ans5);
+
+
+    // Find maximum in an array
+    
