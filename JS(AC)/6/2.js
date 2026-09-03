@@ -149,7 +149,13 @@ const square=n=>n*n;
 console.log(square(5));
 
 //Ques... Write a function that prints "hello word" 5 times at interval of 2s each
+let id1=setTimeout(()=>{
+    console.log("hello world");
+},2000);
 
+setInterval(() => {
+    clearInterval(id1);
+}, 10000);
 
 
 
