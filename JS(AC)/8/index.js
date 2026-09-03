@@ -105,6 +105,9 @@ let arrr=[
     function sum(c=4,d){
         return c+d;
     }
+
+    //spread 
+    console.log(..."ayushgupta");
     
     
    
