@@ -71,7 +71,7 @@ console.log("hello6");
 const sum=(a,b)=>{
     console.log(a+b);
 };
-const cube=(a)=>{
+const cube=a=>{//agr single arg hai toh bracket lgao ya na lgao()
     return a*a*a;
 };
 
