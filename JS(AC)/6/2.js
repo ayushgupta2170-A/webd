@@ -78,7 +78,9 @@ const name=()=>{
     console.log("hello");
 };
 //implicit return
-
+const mul=(a,b)=>(
+    a*b
+);
 
 
 
