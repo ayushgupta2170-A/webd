@@ -29,6 +29,9 @@ const calculator = {
 };
 */
 
+
+/*
+          this keywoed
 const student={
     name:"ayush",
     age:19,
@@ -44,4 +47,17 @@ const student={
 function getAvg(){
     console.log(this);
 }
+*/
+
+
+
+
+     //try and catch
+console.log("hello");
+console.log("hello2");
+console.log(a);
+console.log("hello4");
+console.log("hello6");
+
+
 
