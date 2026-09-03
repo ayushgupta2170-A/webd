@@ -124,7 +124,8 @@ console.log(id2);
 
 
 //this with arrow fx
-const student={
+
+/*const student={
     name:"ayush",
     age:19,
     eng:95,
@@ -140,7 +141,12 @@ const student={
         console.log(this);//parent scope->window
         return this.age;
     },
-};
+};*/
+
+
+//Ques.... Write an arrow function that returns a square of number'n'
+const square=n=>n*n;
+console.log(square(5));
 
 
 
