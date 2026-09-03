@@ -129,7 +129,7 @@ let arrr=[
     function sim(msg,...arg){
         return arg.reduce((sim,el)=>sim+el);
     }
-    console.log(sim(1,2,3,4));
+    console.log(sim("hello",1,2,3,4));
     
     
    
