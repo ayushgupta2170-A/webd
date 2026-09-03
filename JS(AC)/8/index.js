@@ -101,6 +101,10 @@ let arrr=[
     function sum(a,b=2){
         return a+b;
     }
+
+    function sum(c=4,d){
+        return c+d;
+    }
     
     
    
