@@ -137,7 +137,7 @@ const student={
     },
 
     getMarks:()=>{
-        console.log(this);
+        console.log(this);//parent scope->window
         return this.age;
     },
 };
